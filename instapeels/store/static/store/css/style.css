@@ -1,0 +1,9 @@
+.bgcolor{
+    background-color: #dcb061;
+}
+
+.rte{
+    overflow-wrap: break-word;
+    font-size: 20px;
+    margin: 15px;
+}
