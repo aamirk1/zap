@@ -28,7 +28,7 @@ class Product(models.Model):
     slug = models.CharField(("slug"), max_length=50,null=False,blank=False)
     name = models.CharField(("Name"), max_length=150,null=False,blank=False)
     product_image = models.ImageField(upload_to=get_file_path,null=False,blank=False)
-    short_description = models.TextField(("Description"),max_length=200,null=False,blank=False)
+    short_description = models.TextField(("Short Description"),max_length=200,null=False,blank=False)
     quantity = models.IntegerField(null =False,blank=False)
     description = models.TextField(("Description"),max_length=500,null=False,blank=False)
     orginal_price = models.FloatField(null =False,blank=False)
