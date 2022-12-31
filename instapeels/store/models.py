@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 import datetime
 import os
     
@@ -30,7 +31,8 @@ class Product(models.Model):
     product_image = models.ImageField(upload_to=get_file_path,null=False,blank=False)
     short_description = models.TextField(("Short Description"),max_length=200,null=False,blank=False)
     quantity = models.IntegerField(null =False,blank=False)
-    description = models.TextField(("Description"),max_length=500,null=False,blank=False)
+    description = models.TextField(("Description"),max_length=600,null=False,blank=False)
+    ingridient = models.TextField(("Ingridient"),default="Not Availabel",max_length=500,null=False,blank=False)
     orginal_price = models.FloatField(null =False,blank=False)
     selling_price = models.FloatField(null =False,blank=False)
     status = models.BooleanField(default=False,help_text="0=default, 1=Hidden")
@@ -42,3 +44,6 @@ class Product(models.Model):
     create_at = models.DateTimeField(auto_now_add=True)
     def __str__(self):
         return self.name
+
+# class User(models.Model):
+#     pass
