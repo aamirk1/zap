@@ -15,7 +15,7 @@ def addtocart(request):
                 else:
                     prod_qty = int(request.POST.get('product_qty'))
                     if product_check.quantity >= prod_qty:
-                        Cart.objects.create(user=request.user.id,product_id=prod_id,product_qty= prod_qty)
+                        Cart.objects.create(user=request.user,product_id=prod_id,product_qty= prod_qty)
                         return JsonResponse({'status':"Product added successfully"})
                     else:
                         return JsonResponse({'status':"Only "+ str(product_check.quantity)+" quantity available"})
