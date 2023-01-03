@@ -16,6 +16,29 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'collection' %}">Collection</a>
           </li>
+
+          {% if request.user.is_authenticated %}
+
+            <div class="dropdown">
+              <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ request.user }}
+              </a>
+            
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="{% url 'logoutpage' %}">Logout</a></li>
+              </ul>
+            </div>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'loginpage' %}">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'register' %}">Register</a>
+            </li>
+          {% endif %}
+          
+
+
           <li class="nav-item">
             <a class="nav-link" href="https://www.instapeels.com/pages/about-us">About Us</a>
           </li>

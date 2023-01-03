@@ -31,4 +31,6 @@ def loginpage(request):
 
 def logoutpage(request):
     if request.method == "POST":
-        pass
+        logout(request)
+        messages.success(request,'Logout Successfully')
+    return redirect('/login/')
