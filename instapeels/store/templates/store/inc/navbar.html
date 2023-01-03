@@ -11,10 +11,11 @@
             <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'shop' %}">Shop</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="{% url 'collection' %}">Collection</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'viewcart' %}">Cart</a>
           </li>
 
           {% if request.user.is_authenticated %}
@@ -39,9 +40,9 @@
           
 
 
-          <li class="nav-item">
+          {% comment %} <li class="nav-item">
             <a class="nav-link" href="https://www.instapeels.com/pages/about-us">About Us</a>
-          </li>
+          </li> {% endcomment %}
         </ul>
       </div>
     </div>
