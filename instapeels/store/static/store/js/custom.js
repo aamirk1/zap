@@ -27,7 +27,7 @@ $(document).ready(function() {
         var token = $('input[name=csrfmiddlewaretoken]').val();
         $.ajax({
             method : "POST",
-            url: "/add_tocart",
+            url: "/add_to_cart",
             data: {
                 "product_id":product_id,
                 "product_qty":product_qty,
@@ -35,6 +35,7 @@ $(document).ready(function() {
             },
             success: function(response){
                 console.log(response);
+                alertify.success(response.status)
                 
             }
             

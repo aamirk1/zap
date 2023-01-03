@@ -14,5 +14,5 @@ urlpatterns = [
 
 
 
-    path('/add_to_cart',cart.addtocart, name='addtocart'),
+    path('add_to_cart',cart.addtocart, name='addtocart'),
 ]
