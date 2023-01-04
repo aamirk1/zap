@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="card shadow product_data">
+                <div class="card shadow">
                     <div class="card-body cartdata">
                         {% if cart %}
                             {% for item in cart %}
@@ -46,6 +46,7 @@
                                     </div>
                                 </div>
                             {% endfor %}
+                            <a href="{% url 'checkout' %}" class="mt-2 btn btn-outline-success">Checkout </a>
                         {% else %}
                             <h4>Your cart is empty</h4>
 

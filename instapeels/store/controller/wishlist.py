@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from django.shortcuts import render,redirect
 from django.contrib import messages 
-from store.models import Wishlist
+from store.models import Wishlist,Product
 
 @login_required(login_url='loginpage')
 def index(request):
@@ -16,18 +16,28 @@ def addtowishlist(request):
             prod_id= int(request.POST.get('product_id'))
             product_check = Product.objects.get(id=prod_id)
             if (product_check):
-                if(Cart.objects.filter(user=request.user.id,product_id=prod_id)):
-                    return JsonResponse({'status':"Product Is Already In Cart"})
+                if(Wishlist.objects.filter(user=request.user.id,product_id=prod_id)):
+                    return JsonResponse({'status':"Product Is Already In Wishlist"})
                 else:
-                    prod_qty = int(request.POST.get('product_qty'))
-                    if product_check.quantity >= prod_qty:
-                        Cart.objects.create(user=request.user,product_id=prod_id,product_qty= prod_qty)
-                        return JsonResponse({'status':"Product added successfully"})
-                    else:
-                        return JsonResponse({'status':"Only "+ str(product_check.quantity)+" quantity available"})
+                    Wishlist.objects.create(user=request.user,product_id=prod_id)
+                    return JsonResponse({'status':"Product added successfully"})
             else:
                 return JsonResponse({'status':"No Such Product Found"})
         else:
             return JsonResponse({'status':"Login To Continue!"})
 
     return render(request,'/')
+
+def deletewishlistitem(request):
+    if request.method =='POST':
+        if request.user.is_authenticated:
+            prod_id = int(request.POST.get('product_id'))
+            if(Wishlist.objects.filter(user=request.user,product_id=prod_id)):
+                wishlistitem=Wishlist.objects.get(product_id= prod_id,user=request.user)
+                wishlistitem.delete()
+                return JsonResponse({'status':"Product remove from wishlist"})
+            else:
+                return JsonResponse({'status':"Product not found in wishlist"})
+        else:
+            return JsonResponse({'status':"Login to continue"})
+    return redirect('/')
