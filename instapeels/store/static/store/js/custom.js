@@ -90,6 +90,28 @@ $(document).ready(function() {
 
     });
 
+    $('.addToWishlist').click(function(e){
+        e.preventDefault();
+        var product_id = $(this).closest('.product_data').find(".prod_id").val();
+        var token = $('input[name=csrfmiddlewaretoken]').val();
+        $.ajax({
+            method : "POST",
+            url: "/add_to_wishlist",
+            data: {
+                "product_id":product_id,
+                csrfmiddlewaretoken: token
+            },
+            success: function(response){
+                console.log(response);
+                alertify.success(response.status)
+                
+            }
+            
+        });
+
+    });
+
+
 
 });
 

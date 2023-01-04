@@ -55,12 +55,11 @@
                                     <div class="col-md-9">
                                         <br/>
                                         {% if products.quantity > 0 %}
-                                        <button type="button" class="btn btn-primary me-3 float-start addToCart">Add to Cart <i class="fa fa-shopping-cart"></i></button>&nbsp;
-                                        <button type="button" class="btn btn-success me-3 float-start">Buy Now</button>
-                                        {% else %}
-                                        <button type="button" class="btn btn-warning me-3 float-start">Add to Wishlist <i class="fa fa-heart"></i></button>
-                                        
-                                        {% endif %}
+                                          <button type="button" class="btn btn-primary me-3 float-start addToCart">Add to Cart <i class="fa fa-shopping-cart"></i></button>&nbsp;
+                                          <button type="button" class="btn btn-success me-3 float-start">Buy Now <i class="fa fa-bag-shopping"></i></button>
+                                          
+                                          {% endif %}
+                                            <button type="button" class="btn btn-warning me-3 float-start addToWishlist">Add to Wishlist <i class="fa fa-heart"></i></button>
                                     </div>
                                 </div>
                             </div>
