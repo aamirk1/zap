@@ -1,4 +1,4 @@
-
+from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from django.shortcuts import render,redirect
 from django.contrib import messages 
@@ -26,6 +26,7 @@ def addtocart(request):
 
     return render(request,'/')
 
+@login_required(login_url='loginpage')
 def viewcart(request):
     
     cart = Cart.objects.filter(user=request.user)
@@ -52,3 +53,6 @@ def deletecartitem(request):
         return JsonResponse({'status':"Deleted Successfully"})
     return redirect('/')
 
+@login_required(login_url='loginpage')
+def wishlist(request):
+    return render(request,'')

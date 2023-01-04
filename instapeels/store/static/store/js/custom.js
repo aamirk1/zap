@@ -59,7 +59,7 @@ $(document).ready(function() {
                 csrfmiddlewaretoken: token
             },
             success: function(response){
-                alertify.success(response.status)
+                // alertify.success(response.status)
                 $('.cartdata').load(location.href +" .cartdata");
                 
             }
@@ -74,13 +74,14 @@ $(document).ready(function() {
         var token = $('input[name=csrfmiddlewaretoken]').val();
         $.ajax({
             method : "POST",
-            url: "/delete-cart-item",
+            url: "/deletecartitem",
             data: {
                 "product_id":product_id,
                 csrfmiddlewaretoken: token
             },
             success: function(response){
-                console.log('upde')
+                console.log('delete')
+                $('.cartdata').load(location.href +" .cartdata");
                 // alertify.success(response.status)
                 
             }
