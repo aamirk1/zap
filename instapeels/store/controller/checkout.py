@@ -11,7 +11,7 @@ def index(request):
     cartitems= Cart.objects.filter(user=request.user)
     total_price= 0
     for item in cartitems:
-        total_price = + item.product.selling_price * item.product_qty
+        total_price = total_price + item.product.selling_price * item.product_qty
 
     context= {'cartitems':cartitems,'total_price':total_price}
     return render(request,'store/checkout.html',context)
