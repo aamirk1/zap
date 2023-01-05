@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from django.shortcuts import render,redirect
 from django.contrib import messages 
-from store.models import *
+from store.models import Cart,Order,OrderItem,Product
 
 import random
 
@@ -24,6 +24,7 @@ def index(request):
 def placeorder(request):
     if request.method=='POST':
         neworder = Order()
+        neworder.user = request.user
         neworder.fname = request.POST.get('fname')
         neworder.lname = request.POST.get('lname')
         neworder.email = request.POST.get('email')
@@ -46,8 +47,8 @@ def placeorder(request):
 
         neworder.tracking_no = trackno
         neworder.save()
+        
         neworderitems = Cart.objects.filter(user=request.user)
-        # neworderitems = Cart.objects.filter(user=request.user)
         for item in neworderitems:
             OrderItem.objects.create(
                 order = neworder,
