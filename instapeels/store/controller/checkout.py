@@ -15,3 +15,6 @@ def index(request):
 
     context= {'cartitems':cartitems,'total_price':total_price}
     return render(request,'store/checkout.html',context)
+
+def placeorder(request):
+    pass
