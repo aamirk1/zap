@@ -85,6 +85,7 @@ class Order(models.Model):
 
     def __str__(self):
         return '{} - {}'.format(self.id, self.tracking_no)
+        
 class OrderItem(models.Model):
     order = models.ForeignKey(Order,on_delete=models.CASCADE)
     product = models.ForeignKey(Product,on_delete=models.CASCADE)
