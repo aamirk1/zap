@@ -1,4 +1,63 @@
 {% extends 'main/layouts/main.html' %}
-{% block content %}
+{% load static %}
 
+
+{% block content %}
+    
+{% include 'main/inc/navbar.html' %}
+
+{% include 'main/inc/slider.html' %}
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card my-2" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-670.jpg?size=626&ext=jpg&ga=GA1.1.1197037677.1673003370&semt=sph" class="card-img-top" alt="small banner">
+            <div class="card-body">
+              <h5 class="card-title">About Us</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-dark float-center">Read More</a>
+            </div>
+        </div>
+        
+      </div>
+      <div class="col-md-3">
+        <div class="card my-2" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-673.jpg?size=626&ext=jpg&ga=GA1.1.1197037677.1673003370&semt=sph" class="card-img-top" alt="small banner">
+            <div class="card-body">
+              <h5 class="card-title">Gallery</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-dark float-center">Read More</a>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card my-2" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-psd/fitness-web-banner-social-media-cover-template_237398-394.jpg?size=626&ext=jpg&ga=GA1.2.1197037677.1673003370&semt=sph">
+            <div class="card-body">
+              <h5 class="card-title">Third Party Manufacturing</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-dark float-center">Read More</a>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card my-2" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-660.jpg?w=900&t=st=1673007801~exp=1673008401~hmac=3a890438513b67f07f4fb679f87a3ffb94ee6e1df6370bbcb165ca503ff00c59" class="card-img-top" alt="small banner">
+            <div class="card-body">
+              <h5 class="card-title">Product Range</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+            
+
+            
+            
+            
+      
 {% endblock content %}
