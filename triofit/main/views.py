@@ -1,9 +1,10 @@
 from django.shortcuts import render
-
+from django.contrib import messages
+from django.shortcuts import redirect
+from .models import Category, Product  
 # Create your views here.
 def home(request):
     return render(request, 'main/index.html')
-
 
 def collection(request):
     ne = Category.objects.filter(status=0)

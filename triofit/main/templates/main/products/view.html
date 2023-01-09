@@ -1,6 +1,6 @@
-{% extends 'store/layouts/main.html' %}
+{% extends 'main/layouts/main.html' %}
 {% block content %}
-{% include 'store/inc/navbar.html' %}
+{% include 'main/inc/navbar.html' %}
 <div class="py-3 bgcolor">
     <div class="container">
         <a class="text-white" href="{% url 'home' %}">Home /</a>
@@ -57,7 +57,7 @@
                                         <br/>
                                         {% if products.quantity > 0 %}
                                           <button type="button" class="btn btn-primary me-3 float-start addToCart">Add to Cart <i class="fa fa-shopping-cart"></i></button>&nbsp;
-                                          <button type="button" class="btn btn-success me-3 float-start">Buy Now <i class="fa fa-bag-shopping"></i></button>
+                                          <button type="button" class="btn btn-dark me-3 float-start">Buy Now <i class="fa fa-bag-shopping"></i></button>
                                           
                                           {% endif %}
                                             <button type="button" class="btn btn-warning me-3 float-start addToWishlist">Add to Wishlist <i class="fa fa-heart"></i></button>
@@ -106,35 +106,7 @@
                                 </div>
                               </div>
 
-                            {% comment %} <p>
-                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Description</a>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Ingredients</button>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Toggle Three</button>
-                              </p>
-                              <div class="row">
-                                <div class="col-lg-12">
-                                  <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                    <div class="card card-body">
-                                      {{ products.description }}
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col">
-                                  <div class="collapse multi-collapse" id="multiCollapseExample2">
-                                    <div class="card card-body">
-                                      2 Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col">
-                                    <div class="collapse multi-collapse" id="multiCollapseExample3">
-                                      <div class="card card-body">
-                                        3 Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-                        </div> {% endcomment %}
+                            </div>
                     </div>
                 </div>
             </div>
@@ -143,3 +115,4 @@
 </div>
 
 {% endblock content %}
+
