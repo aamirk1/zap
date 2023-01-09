@@ -1,4 +1,22 @@
 {% extends 'main/layouts/main.html' %}
+{% load static %}
 {% block content %}
-<h1>Gallery</h1>
+
+{% include 'main/inc/navbar.html' %}
+<hr>
+<h4>Gallery</h4>
+<div class="container-fluid bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col mt-5 mb-5">
+                <img src="{% static 'main/images/g1.jpeg' %}"class="certify" height="450px" width="550px" alt="cetificates">
+            </div>
+            <div class="col mt-5 mb-5">
+                <img src="{% static 'main/images/g2.jpeg' %}"class="certify" height="450px" width="550px" alt="cetificates">
+            </div>
+        </div>
+        
+    </div>
+</div>
 {% endblock content %}
+

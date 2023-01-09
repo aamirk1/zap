@@ -1,5 +1,32 @@
 {% extends 'main/layouts/main.html' %}
+{% load static %}
 {% block content %}
-<h1>About Us Page</h1>
+
+{% include 'main/inc/navbar.html' %}
+<hr>
+{% comment %} LICENSES AND CERTIFICATIONS {% endcomment %}
+<h4>LICENSES AND CERTIFICATIONS</h4>
+<div class="container-fluid bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col mt-5 mb-5">
+                <img src="{% static 'main/images/2015.jpg' %}"class="certify" height="450px" width="350px" alt="cetificates">
+            </div>
+            <div class="col  mt-5 mb-5">
+                <img src="{% static 'main/images/2018.jpg' %}"class="certify" height="450px" width="350px" alt="cetificates">
+            </div>
+            <div class="col  mt-5 mb-5">
+                <img src="{% static 'main/images/GMP.jpg' %}"class="certify" height="450px" width="350px" alt="cetificates">
+            </div>
+            <div class="col mt-5 mb-5">
+                <img src="{% static 'main/images/TRIOFIT.jpg' %}"class="certify" style="margin-left: 215px;" height="450px" width="350px" alt="cetificates">
+            </div>
+            <div class="col mt-5 mb-5">
+                <img src="{% static 'main/images/HACCP.jpg' %}"class="certify" height="450px" width="350px" alt="cetificates">
+            </div>  
+        </div>
+        
+    </div>
+</div>
 {% endblock content %}
 
