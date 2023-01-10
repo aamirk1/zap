@@ -4,7 +4,7 @@
 <div class="py-3 bgcolor">
     <div class="container">
         <a class="text-white" href="{% url 'home' %}">Home /</a>
-        <a class="text-white" href="{% url 'home' %}">Collection /</a>
+        <a class="text-white" href="{% url 'collection' %}">Collection /</a>
         <a class="text-white" href="{% url 'collectionview' products.category.slug  %}"> {{ products.category.name }} /</a>
         <a class="text-white" href="{% url 'productview' products.category.slug products.slug  %}">{{ products.name }}</a>
         
