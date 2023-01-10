@@ -98,14 +98,14 @@ div>a{
 }
 .fooright-content{
     border-left: 1px solid #878787;
-    height: 150px;
+    height: 245px;
     position: relative;
     top: 10px;
     left: 190px;
     display: flex;
 }
 .footext1{
-    color: #878787;
+    color: gold;
     font-weight: bold;
 }
 .fooright{
