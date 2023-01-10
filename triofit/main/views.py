@@ -4,7 +4,9 @@ from django.shortcuts import redirect
 from .models import Category, Product  
 # Create your views here.
 def home(request):
-    return render(request, 'main/index.html')
+    cate = Category.objects.filter(status=0)
+    context = {'ne':cate}
+    return render(request, 'main/index.html',context)
 
 def collection(request):
     ne = Category.objects.filter(status=0)
