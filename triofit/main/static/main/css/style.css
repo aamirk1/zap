@@ -1,6 +1,6 @@
 *{
     font-family: 'Roboto', sans-serif;
-    /* background-color: #900C3F; */
+    text-transform: uppercase;
 }
 
 
@@ -31,6 +31,9 @@ div>a{
     padding: 7px 10px;
     font-weight: 600;
     min-width: 45px;
+}
+.sentence{
+    text-transform: capitalize;
 }
 .certify{
     padding: 5px;
