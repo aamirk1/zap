@@ -32,5 +32,7 @@ urlpatterns = [
     path('gallery',pages.gallery,name='gallery'),
     path('tpm',pages.ThirdPartyManufac,name='tpm'),
     path('contactus',pages.contactus,name='contactus'),
+    path('events',pages.events,name='events'),
+    path('productrange',pages.productrange,name='productrange'),
 ]
 

@@ -12,5 +12,11 @@ def ThirdPartyManufac(request):
     
 def contactus(request):
     return render(request, 'main/navbarpages/contactus.html')
+    
+def events(request):
+    return render(request, 'main/navbarpages/events.html')
+
+def productrange(request):
+    return render(request, 'main/navbarpages/productrange.html')
 
     

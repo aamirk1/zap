@@ -53,11 +53,12 @@ div>a{
 }
 
 
-/* .footer{
+.foofooter{
     display: flex;
     background-color: #182337;
-    height: 290px;
+    height: 350px;
     padding: 20px;
+    margin-top: 5px;
 }
 .f-1{
     margin: 10px 30px;
@@ -76,12 +77,12 @@ div>a{
 .f-1 ul li a:hover{
     text-decoration: underline;
 }
-h2{
+.f-1 h2{
     font-size: 18px;
-    color: #878787;
+    color: gold;
     text-transform: uppercase;
 }
-.copy{
+.foocopy{
     border-top: 1px solid #878787;
     position: relative;
     bottom: 50px;
@@ -91,11 +92,11 @@ h2{
     display:flex;
     color: white;
 }
-.card{
+.foocard{
     position: relative;
     left: 700px;
 }
-.right-content{
+.fooright-content{
     border-left: 1px solid #878787;
     height: 150px;
     position: relative;
@@ -103,17 +104,16 @@ h2{
     left: 190px;
     display: flex;
 }
-.text1{
+.footext1{
     color: #878787;
     font-weight: bold;
 }
-.right{
+.fooright{
     position: relative;
     left: 30px;
 }
-.text2{
+.footext2{
     margin-top: 10px;
     color: white;
     font-size: 16px;
-} */
-
+} 

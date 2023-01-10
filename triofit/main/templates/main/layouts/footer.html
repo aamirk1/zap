@@ -1,10 +1,11 @@
-{% comment %} {% load static %} {% endcomment %}
-<div class="footer">
+{% comment %} {% extends 'main/layouts/main.html' %} {% endcomment %}
+{% load static %}
+<div class="foofooter">
     <div class="f-1">
         <h2>About</h2>
         <ul>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">About Us</a></li>
+            <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+            <li><a href="{% url 'aboutus' %}">About Us</a></li>
             <li><a href="http://127.0.0.1:8000/admin/login/?next=/admin/">Admin Login</a></li>
         </ul>
     </div>
@@ -35,44 +36,23 @@
             <li><a href="#">YouTube</a></li>
         </ul>
     </div>
-    <div class="right-content">
-        {% comment %} <div class="right">
-            <p class="text1">Mail Us:</p>
-            <p class="text2">Masav,<br>
-                Tulinj Road, Central Park,<br>
-                Near Police Chawki,<br>
-                Mumbai 401209,<br>
-                Maharashtra,India.</p>
-        </div> {% endcomment %}
-        <div class="right">
-            <p class="text1">Register Office:</p>
-            {% comment %} <p class="text2">Masav,<br>
-                Tulinj Road, Central Park,<br>
-                Near Police Chawki,<br>
-                Mumbai 401209,<br>
+    <div class="fooright-content">
+        
+        <div class="fooright">
+            <p class="footext1">Register Office:</p>
+            <p class="footext2">Triofit Nutracare private limited<br>
+                plot j-1/22,<br>
+                Tata Steel Road,<br>
+                Tarapur MIDC,<br>
+                boisar-401506,<br>
                 Maharashtra,India.<br>
-                Mobile No.: <span style="color: blue;">num</span>
-            </p> {% endcomment %}
+                Mobile No.: <span style="color: gold;">9975810075</span>
+            </p>
         </div>
     </div>
     
 </div>
-<div class="copy">
+<div class="foocopy">
     Copyright &copy; <?php echo date('Y')?> &nbsp;<a href="#">triofit.com</a>
-    <span class="card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd53rsgZUQ1IcJavNNywppBKDIEZd52JSuAd5NKQ6gjZR7PluwwNfvDIapigvMnUj7JfE0gTyEqM8Zms_xm_fSb7BNQF2P-on6n9HVZbCb8VmZCmQJhz_TpnTuLCleWaPrj6BxSviFpQF8w1o94B3QAdRkRatC6fj3U3tjOYNaoO6N7a_r0I13Ylg9/s320/allcard.png"></span>
+    <span class="foocard"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd53rsgZUQ1IcJavNNywppBKDIEZd52JSuAd5NKQ6gjZR7PluwwNfvDIapigvMnUj7JfE0gTyEqM8Zms_xm_fSb7BNQF2P-on6n9HVZbCb8VmZCmQJhz_TpnTuLCleWaPrj6BxSviFpQF8w1o94B3QAdRkRatC6fj3U3tjOYNaoO6N7a_r0I13Ylg9/s320/allcard.png"></span>
 </div>
-<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-<script src="{% static 'main/js/custom.js' %}"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-
-<script>
-    alertify.set('notifier','position', 'top-right');
-    {% for msg in messages %}
-        alertify.success('{{ msg }}');                
-    {% endfor %}
-</script>
-{% block scripts %}{% endblock scripts %}
-</body>
-</html>
