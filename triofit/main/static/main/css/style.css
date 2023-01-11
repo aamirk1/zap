@@ -3,7 +3,9 @@
     text-transform: uppercase;
 }
 
-
+.bgcolor{
+    background-color: #000;
+}
 
 div>a{
     text-decoration: none;
