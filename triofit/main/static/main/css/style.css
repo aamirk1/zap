@@ -2,9 +2,23 @@
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
 }
-
+.sect1{
+    background-color: #0a0a0a;
+}
+.navbarcolor{
+    background: #950101;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #950101 0%, #630102 50%, #3d0302 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #950101 0%, #630102 50%, #3d0302 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #950101 0%, #630102 50%, #3d0302 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#950101', endColorstr='#3d0302',GradientType=0 );
+    /* IE6-9 */
+}
 .bgcolor{
-    background-color: #000;
+    background-color: #0a0a0a;
 }
 
 div>a{
@@ -57,10 +71,9 @@ div>a{
 
 .foofooter{
     display: flex;
-    background-color: #000;
+    background-color: #0a0a0a;
     height: 350px;
     padding: 20px;
-    margin-top: 5px;
 }
 .f-1{
     margin: 10px 30px;
@@ -119,3 +132,10 @@ div>a{
     color: white;
     font-size: 16px;
 } 
+
+.nav-link{
+    color:antiquewhite
+}
+.nav-link:hover{
+    color:#0a0a0a
+}
