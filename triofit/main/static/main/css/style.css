@@ -2,23 +2,65 @@
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
 }
-.sect1{
-    background-color: #0a0a0a;
+.news{
+    background-color: rgba(0,0,0,0.5);
+    float: left;
+    width: 380px !important;
+    height: 130vh;
+    position: relative;
+    top: 30px;
+    left: 50px;
+    padding: 30px !important;
+    max-height: 385px;
+    bottom: 40px;
 }
-.navbarcolor{
-    background: #950101;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #950101 0%, #630102 50%, #3d0302 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #950101 0%, #630102 50%, #3d0302 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #950101 0%, #630102 50%, #3d0302 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#950101', endColorstr='#3d0302',GradientType=0 );
-    /* IE6-9 */
+.bann{
+    background-color: rgba(0,0,0,0.5);
+    float: left;
+    width: 480px !important;
+    height: 130vh;
+    position: relative;
+    top: 200px;
+    left: 160px;
+    padding: 30px !important;
+    max-height: 320px;
+    bottom: 40px;
+}
+
+.catea{
+    background-color: rgba(0,0,0,0.5);
+    width: 1320px !important;
+    height: 130vh;
+    position: relative;
+    top: 510px;
+    left: 95px;
+    padding: 30px !important;
+    max-height: 65px;
+    bottom: 0px;
+}
+.cated{
+    background-color: rgba(0,0,0,0.5);
+    float: left;
+    width: 460px !important;
+    height: 65vh;
+    position: relative;
+    top: 480px;
+    left: 10px;
+    padding: 30px !important;
+    max-height: 345px;
+    bottom: 0px;
+}
+.btncolor{
+    background-color: #f36100;
+}
+.sect1{
+    background-color: #EFEFEF;
+}
+.navbarcolor,.product_data{
+    background: #cccccc
 }
 .bgcolor{
-    background-color: #0a0a0a;
+    background-color: #f36100;
 }
 
 div>a{
@@ -68,7 +110,6 @@ div>a{
     transform: scale(1.5);
 }
 
-
 .foofooter{
     display: flex;
     background-color: #0a0a0a;
@@ -85,7 +126,7 @@ div>a{
     margin-top: 10px;
 }
 .f-1 ul li a{
-    color: white;
+    color: #ccc;
     text-decoration: none;
     font-size: 15px;
 }
@@ -134,8 +175,8 @@ div>a{
 } 
 
 .nav-link{
-    color:antiquewhite
+    color:#0a0a0a
 }
 .nav-link:hover{
-    color:#0a0a0a
+    color:#f36100
 }

@@ -5,7 +5,7 @@
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img style="height: 610px;" src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-660.jpg?size=626&ext=jpg&ga=GA1.1.1197037677.1673003370&semt=sph" class="d-block w-100" alt="...">
+        <video style="width:100%;max-height:80%; margin-top:2px" autoplay muted loop  preload="auto"><source src="{% static 'main/images/1234.mp4' %}" type="video/mp4"></video>
       </div>
       <div class="carousel-item">
         <img style="height: 610px;" src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-673.jpg?size=626&ext=jpg&ga=GA1.1.1197037677.1673003370&semt=sph" class="d-block w-100" alt="...">
@@ -13,7 +13,17 @@
       <div class="carousel-item">
         <img style="height: 610px;" src="https://img.freepik.com/free-psd/fitness-web-banner-social-media-cover-template_237398-394.jpg?w=826&t=st=1673003439~exp=1673004039~hmac=9c45fa781f30de63df82f7b6cc09f108d1b7e21283aee785fbea364edb45d917" class="d-block w-100" alt="...">
       </div>
+      <div class="container bann">
+        <div class="text-white">
+          <h3>Innovative Nutrition, Empowering healthy life</h3>
+          <p>Leading Custom manufacturing of superior</p>
+          <p>quality Nutraceutical products.</p>
+          <p>APPROVED 'A GRADE' FACILITY BY FASSI</p>
+        </div>
+        <a href="{% url 'contactus' %}" class="btn btncolor">Contact Us</a>
+      </div>
     </div>
+    
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" style="margin-left:-100px; color:blue;" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>

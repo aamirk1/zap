@@ -7,79 +7,85 @@
 {% include 'main/inc/slider.html' %}
 
 <section class="sect1">
-  <div class="container-fluid col-md-12">
+  <div class="container-fluid">
     <div class="row pt-5">
-      <div class="col-md-3">
-        <div class="card my-2" style="width: 18rem; height: 385px;">
-            <img src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-670.jpg?size=626&ext=jpg&ga=GA1.1.1197037677.1673003370&semt=sph"style="height: 150px;" class="card-img-top" alt="small banner">
-            <div class="card-body">
-              <h5 class="card-title">About Us</h5>
-              <p class="card-text" style="height: 100px;">Triofit Nutracare PVT.LTD. Is Engaged In The Business Of Manufacturing & Marketing Of Healthcare & Nutraceutical Products</p>
-              <a href="{% url 'aboutus' %}" class="btn btn-dark mt-2" style="margin-left:65px">Read More</a>
-            </div>
-        </div>
-        
-      </div>
-      <div class="col-md-3">
-        <div class="card my-2" style="width: 18rem; height: 385px;">
-            <img src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-673.jpg?size=626&ext=jpg&ga=GA1.1.1197037677.1673003370&semt=sph"style="height: 150px;" class="card-img-top" alt="small banner">
-            <div class="card-body">
-              <h5 class="card-title">Gallery</h5>
-              <p class="card-text" style="height: 100px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="{% url 'gallery' %}" class="btn btn-dark mt-2" style="margin-left:65px">Read More</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card my-2" style="width: 18rem; height: 385px;">
-            <img src="https://img.freepik.com/free-psd/fitness-web-banner-social-media-cover-template_237398-394.jpg?size=626&ext=jpg&ga=GA1.2.1197037677.1673003370&semt=sph"style="height: 150px;" class="card-img-top" alt="small banner">
-            <div class="card-body">
-              <h5 class="card-title">Third Party</h5>
-              <p class="card-text" style="height: 100px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="{% url 'tpm' %}" class="btn btn-dark mt-2" style="margin-left:65px">Read More</a>
-            </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card my-2" style="width: 18rem; height: 385px;">
-            <img src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-660.jpg?w=900&t=st=1673007801~exp=1673008401~hmac=3a890438513b67f07f4fb679f87a3ffb94ee6e1df6370bbcb165ca503ff00c59"style="height: 150px;" class="card-img-top" alt="small banner">
-            <div class="card-body">
-              <h5 class="card-title">Product Range</h5>
-              <p class="card-text" style="height: 100px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="{% url 'gallery' %}" class="btn btn-dark mt-2" style="margin-left:65px">Read More</a>
-            </div>
+    
+      <div class="col-md-3 news mb-5">
+        <img src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-660.jpg?w=900&t=st=1673007801~exp=1673008401~hmac=3a890438513b67f07f4fb679f87a3ffb94ee6e1df6370bbcb165ca503ff00c59"style="height: 130px;" class="card-img-top" alt="small banner">
+        <h5 class="card-title mt-2 text-white">About Us</h5>
+        <div class="card-body">
+          <p class="card-text text-white" style="height: 100px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url 'aboutus' %}" class="btn btn-dark mt-2" style="margin-left:65px">Read More</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="container-fluid mt-2" style="height:10px;background-color:#f36100;"></div>
-
-  <div class="container  mt-5">
-      <div class="row">
-          <div class="col-md-12">
-              <h1 class="text-center text-white">Categories</h1>
-              <div class="row my-5">
-                  {% for item in ne %}
-                  <div class="col-md-4">
-                      <div class="card">
-                          <a href="{% url 'collectionview' item.slug %}">
-                              <div class="card-body">
-                                  <div class="category-image">
-                                      <img src="{{ item.image.url }}" alt="category-image" class="w-100"style="height: 240px;">
-                                  </div>
-                                  <h4 class="text-center mt-2 fs-5 text-dark">{{ item.name }}</h4>
+  <section>
+    <h1 class="text-center text-white catea">Our Expertise</h1>
+    <div class="row">
+      <div class="col-md-12">
+          <div class="row my-5">
+              <div class="col-md-4">
+                  <div class="card cated">
+                          <div class="card-body">
+                              <div class="category-image">
+                                  <img src="{% static 'main/images/Un3.webp' %}" alt="category-image" class="w-100"style="height: 240px;">
                               </div>
-                          </a>
-                      </div>
+                              <h4 class="text-center mt-2 fs-5 text-white">Powder</h4>
+                          </div>
                   </div>
-              {% endfor %}
+                  
               </div>
+              <div class="col-md-4">
+                <div class="card cated">
+                        <div class="card-body">
+                            <div class="category-image">
+                                <img src="{% static 'main/images/Un4.webp' %}" alt="category-image" class="w-100"style="height: 240px;">
+                            </div>
+                            <h4 class="text-center mt-2 fs-5 text-white">Tablets</h4>
+                        </div>
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+              <div class="card cated">
+                      <div class="card-body">
+                          <div class="category-image">
+                              <img src="{% static 'main/images/Un6.webp' %}" alt="category-image" class="w-100"style="height: 240px;">
+                          </div>
+                          <h4 class="text-center mt-2 fs-5 text-white">effervescent tablets</h4>
+                      </div>
+              </div>
+              
+          </div>
+          </div>
+      </div>
+  
+    <video style="width:100%;max-height:100%;" autoplay muted loop preload="auto"><source src="{% static 'main/images/23.mp4' %}" type="video/mp4"></video>
+  </section>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+          <h1 class="text-center text-white">Categories</h1>
+          <div class="row my-5">
+              {% for item in ne %}
+              <div class="col-md-4">
+                  <div class="card">
+                      <a href="{% url 'collectionview' item.slug %}">
+                          <div class="card-body">
+                              <div class="category-image">
+                                  <img src="{{ item.image.url }}" alt="category-image" class="w-100"style="height: 240px;">
+                              </div>
+                              <h4 class="text-center mt-2 fs-5 text-dark">{{ item.name }}</h4>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+          {% endfor %}
           </div>
       </div>
   </div>
-  <div class="container-fluid" style="height:10px;background-color:#f36100;"></div>
-
-</div>
+  </div>
 </section>
 
          
