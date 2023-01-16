@@ -34,5 +34,8 @@ urlpatterns = [
     path('contactus',pages.contactus,name='contactus'),
     path('events',pages.events,name='events'),
     path('productrange',pages.productrange,name='productrange'),
+
+    
+    path('triofit',pages.triofit,name='triofit'),
 ]
 

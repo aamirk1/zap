@@ -18,5 +18,8 @@ def events(request):
 
 def productrange(request):
     return render(request, 'main/navbarpages/productrange.html')
+    
+def triofit(request):
+    return render(request, 'main/triofit/triofit.html')
 
     

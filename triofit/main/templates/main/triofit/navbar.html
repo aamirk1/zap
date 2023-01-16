@@ -13,22 +13,6 @@
           <a class="nav-link {% if request.resolver_match.url_name == 'aboutus' %}active{% endif %}" href="{% url 'aboutus' %}">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if request.resolver_match.url_name == 'gallery' %}active{% endif %}" href="{% url 'gallery' %}">GALLERY</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {% if request.resolver_match.url_name == 'tpm' %}active{% endif %}" href="{% url 'tpm' %}">THIRD PARTY MANUFACTURING</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {% if request.resolver_match.url_name == 'productrange' %}active{% endif %}" href="{% url 'productrange' %}">PRODUCT RANGE</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link {% if request.resolver_match.url_name == 'gallery' %}active{% endif %}" href="{% url 'triofit' %}">Triofit</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {% if request.resolver_match.url_name == '#' %}active{% endif %}" href="{% url 'events' %}">EVENTS</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link {% if request.resolver_match.url_name == 'contactus' %}active{% endif %}" href="{% url 'contactus' %}">CONTACT US</a>
         </li>
       </ul>

@@ -1,0 +1,69 @@
+{% extends 'main/layouts/main.html' %}
+{% load static %}
+
+{% block content %}
+    
+{% include 'main/triofit/navbar.html' %}
+{% include 'main/triofit/slider.html' %}
+
+<section class="sect1">
+  <div class="container-fluid">
+    <div class="row pt-5">
+    
+      <div class="col-md-3 news mb-5">
+        <img src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-660.jpg?w=900&t=st=1673007801~exp=1673008401~hmac=3a890438513b67f07f4fb679f87a3ffb94ee6e1df6370bbcb165ca503ff00c59"style="height: 130px;" class="card-img-top" alt="small banner">
+        <h5 class="card-title mt-2 text-white">About Us</h5>
+        <div class="card-body">
+          <p class="card-text text-white" style="height: 100px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url 'aboutus' %}" class="btn btn-dark mt-2" style="margin-left:65px">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+<h1 class="text-center text-white catea">Our Expertise</h1>
+<div class="row">
+    <div class="col-md-12">
+        <div class="row my-5">
+            <div class="col-md-4">
+                <div class="card cated">
+                    <div class="card-body">
+                        <div class="category-image">
+                            <img src="{% static 'main/images/Un3.webp' %}" alt="category-image" class="w-100"style="height: 240px;">
+                        </div>
+                        <h4 class="text-center mt-2 fs-5 text-white">Powder</h4>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+            <div class="card cated">
+                    <div class="card-body">
+                        <div class="category-image">
+                            <img src="{% static 'main/images/Un4.webp' %}" alt="category-image" class="w-100"style="height: 240px;">
+                        </div>
+                        <h4 class="text-center mt-2 fs-5 text-white">Tablets</h4>
+                    </div>
+            </div>
+            
+        </div>
+        <div class="col-md-4">
+            <div class="card cated">
+                    <div class="card-body">
+                        <div class="category-image">
+                            <img src="{% static 'main/images/Un6.webp' %}" alt="category-image" class="w-100"style="height: 240px;">
+                        </div>
+                        <h4 class="text-center mt-2 fs-5 text-white">effervescent tablets</h4>
+                    </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<video style="width:100%;max-height:100%;" autoplay muted loop preload="auto"><source src="{% static 'main/images/23.mp4' %}" type="video/mp4"></video>
+
+</section style="margin-bottom: 5px;">
+      
+{% endblock content %}

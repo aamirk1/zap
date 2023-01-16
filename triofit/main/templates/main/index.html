@@ -6,43 +6,122 @@
 {% include 'main/inc/navbar.html' %}
 {% include 'main/inc/slider.html' %}
 
-<section class="sect1">
-  <div class="container-fluid">
-    <div class="row pt-5">
-    
-      <div class="col-md-3 news mb-5">
-        <img src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-660.jpg?w=900&t=st=1673007801~exp=1673008401~hmac=3a890438513b67f07f4fb679f87a3ffb94ee6e1df6370bbcb165ca503ff00c59"style="height: 130px;" class="card-img-top" alt="small banner">
-        <h5 class="card-title mt-2 text-white">About Us</h5>
-        <div class="card-body">
-          <p class="card-text text-white" style="height: 100px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="{% url 'aboutus' %}" class="btn btn-dark mt-2" style="margin-left:65px">Read More</a>
+<section class="mt-5">
+  <div class="container-fluid pt-4">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="container fs-2 fw-bold">
+          <h1>Triofit</h1>
+          <p>We manufacturing</p>
+          <p>product range in:</p>
+        </div>
+        <div class="container fs-5 fw-bold">
+          <ul>
+            <li>Powder,</li>
+            <li>Capsules,</li>
+            <li>General tablets,</li>
+            <li>Chewable tablets</li>
+            <li>Effervescent tablets.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="container-fluid">
+          <div class="col">
+              <img src="{% static 'main/images/home/2.png' %}" style="width: 400px;" alt="">
+              <img src="{% static 'main/images/home/3.png' %}" style="height: 300px;background-blend-mode: overlay;margin-left: -65px;" alt="">
+              
+              <img src="{% static 'main/images/home/4.png' %}" style="margin-left: -70px;background-blend-mode: overlay;width: 385px;" alt="">
+            
+          </div>
+          <img src="{% static 'main/images/home/1.png' %}" style="background-blend-mode: overlay;       margin-left: 290px;margin-top: -108px;width: 450px;" alt="">
         </div>
       </div>
     </div>
+    
   </div>
-  <section>
-    <h1 class="text-center text-white catea">Our Expertise</h1>
-    <div class="row">
-      <div class="col-md-12">
-          <div class="row my-5">
-              <div class="col-md-4">
-                  <div class="card cated">
-                          <div class="card-body">
-                              <div class="category-image">
-                                  <img src="{% static 'main/images/Un3.webp' %}" alt="category-image" class="w-100"style="height: 240px;">
-                              </div>
-                              <h4 class="text-center mt-2 fs-5 text-white">Powder</h4>
-                          </div>
-                  </div>
-                  
-              </div>
-              <div class="col-md-4">
+</section>
+<section class="sect1 mt-5">
+  <div class="container-fluid mt-5">
+    <h1 class="text-center pt-5" style="color: #f36100;font-size: 60px;font-weight: bold;">
+      Entrepreneur Innovation & Growth
+    </h1>
+    <div class="container-fluid mt-5">
+      <div class="row pt-5 pb-5">
+        <div class="col pt-2">
+          <div class="containers">
+            <img src="{% static 'main/images/home/10.jpg' %}" class="image" style="width: 460px;border-radius: 30px;" alt="">
+            <div class="middle">              
+              <p class="mi">We Manufacture Products For Your Brand.</p>
+              <a class=" btn text" href="">Read More</a> 
+            </div>
+          </div>
+        </div>
+        <div class="col pt-2">
+          <div class="containers">
+            <img src="{% static 'main/images/home/11.jpg' %}" class="image" style="width: 460px;border-radius: 30px;" alt="">
+            <div class="middle">              
+              <p class="mi">We Manufacture Products For Your Brand.</p>
+              <a class=" btn text" href="">Read More</a> 
+            </div>
+          </div>
+        </div>
+        <div class="col pt-2">
+          <div class="containers">
+            <img src="{% static 'main/images/home/12.jpg' %}" class="image" style="width: 460px;height:306px; border-radius: 30px;" alt="">
+            <div class="middle">              
+              <p class="mi">We Manufacture Products For Your Brand.</p>
+              <a class=" btn text" href="">Read More</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-5 pb-5">
+        <div class="col pt-2">
+          <div class="containers">
+            <img src="{% static 'main/images/home/10.jpg' %}" class="image" style="width: 460px;border-radius: 30px;" alt="">
+            <div class="middle">              
+              <p class="mi">We Manufacture Products For Your Brand.</p>
+              <a class=" btn text" href="">Read More</a> 
+            </div>
+          </div>
+        </div>
+        <div class="col pt-2">
+          <div class="containers">
+            <img src="{% static 'main/images/home/11.jpg' %}" class="image" style="width: 460px;border-radius: 30px;" alt="">
+            <div class="middle">              
+              <p class="mi">We Manufacture Products For Your Brand.</p>
+              <a class=" btn text" href="">Read More</a> 
+            </div>
+          </div>
+        </div>
+        <div class="col pt-2">
+          <div class="containers">
+            <img src="{% static 'main/images/home/13.jpg' %}" class="image" style="width: 460px; height:306px; border-radius: 30px;" alt="">
+            <div class="middle">              
+              <p class="mi">We Manufacture Products For Your Brand.</p>
+              <a class=" btn text" href="">Read More</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+</section>
+<section>
+  <h1 class="text-center text-white catea">Our Expertise</h1>
+  <div class="row">
+    <div class="col-md-12">
+        <div class="row my-5">
+            <div class="col-md-4">
                 <div class="card cated">
                         <div class="card-body">
                             <div class="category-image">
-                                <img src="{% static 'main/images/Un4.webp' %}" alt="category-image" class="w-100"style="height: 240px;">
+                                <img src="{% static 'main/images/Un3.webp' %}" alt="category-image" class="w-100"style="height: 240px;">
                             </div>
-                            <h4 class="text-center mt-2 fs-5 text-white">Tablets</h4>
+                            <h4 class="text-center mt-2 fs-5 text-white">Powder</h4>
                         </div>
                 </div>
                 
@@ -51,43 +130,75 @@
               <div class="card cated">
                       <div class="card-body">
                           <div class="category-image">
-                              <img src="{% static 'main/images/Un6.webp' %}" alt="category-image" class="w-100"style="height: 240px;">
+                              <img src="{% static 'main/images/Un4.webp' %}" alt="category-image" class="w-100"style="height: 240px;">
                           </div>
-                          <h4 class="text-center mt-2 fs-5 text-white">effervescent tablets</h4>
+                          <h4 class="text-center mt-2 fs-5 text-white">Tablets</h4>
                       </div>
               </div>
               
           </div>
-          </div>
-      </div>
-  
-    <video style="width:100%;max-height:100%;" autoplay muted loop preload="auto"><source src="{% static 'main/images/23.mp4' %}" type="video/mp4"></video>
-  </section>
+          <div class="col-md-4">
+            <div class="card cated">
+                    <div class="card-body">
+                        <div class="category-image">
+                            <img src="{% static 'main/images/Un6.webp' %}" alt="category-image" class="w-100"style="height: 240px;">
+                        </div>
+                        <h4 class="text-center mt-2 fs-5 text-white">effervescent tablets</h4>
+                    </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
+  <video style="width:100%;max-height:100%;" autoplay muted loop preload="auto"><source src="{% static 'main/images/23.mp4' %}" type="video/mp4"></video>
+</section>
+
+
+<section>
   <div class="container mt-5">
+    <h2 class="text-center text-dark">Our Process</h2>
+  </div>
+  <div class="container pt-5 pb-5">
     <div class="row">
-      <div class="col-md-12">
-          <h1 class="text-center text-white">Categories</h1>
-          <div class="row my-5">
-              {% for item in ne %}
-              <div class="col-md-4">
-                  <div class="card">
-                      <a href="{% url 'collectionview' item.slug %}">
-                          <div class="card-body">
-                              <div class="category-image">
-                                  <img src="{{ item.image.url }}" alt="category-image" class="w-100"style="height: 240px;">
-                              </div>
-                              <h4 class="text-center mt-2 fs-5 text-dark">{{ item.name }}</h4>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-          {% endfor %}
-          </div>
+      <div class="col">
+        <img src="https://media.istockphoto.com/id/1358582952/photo/the-engineer-is-drafting-the-planning-structure-with-architect-equipment-and-architectural.jpg?b=1&s=170667a&w=0&k=20&c=wG-dQIpYY9oZnszJuBJ2Mvbup4SkkcHJdFMkiztpCNc=" alt="" width="150px" height="130px">
       </div>
+      <div class="col">
+        <img src="https://media.istockphoto.com/id/1358582952/photo/the-engineer-is-drafting-the-planning-structure-with-architect-equipment-and-architectural.jpg?b=1&s=170667a&w=0&k=20&c=wG-dQIpYY9oZnszJuBJ2Mvbup4SkkcHJdFMkiztpCNc=" alt="" width="150px" height="130px">
+      </div>
+      <div class="col">
+        <img src="https://media.istockphoto.com/id/1358582952/photo/the-engineer-is-drafting-the-planning-structure-with-architect-equipment-and-architectural.jpg?b=1&s=170667a&w=0&k=20&c=wG-dQIpYY9oZnszJuBJ2Mvbup4SkkcHJdFMkiztpCNc=" alt="" width="150px" height="130px">
+      </div>
+    </div>
   </div>
-  </div>
+  
 </section>
 
          
       
 {% endblock content %}
+{% comment %} <div class="container-fluid mt-5">
+  <div class="row pt-5 pb-5">
+    <div class="col">
+      <img src="{% static 'main/images/home/10.jpg' %}" style="width: 460px;border-radius: 30px;" alt="">
+    </div>
+    <div class="col">
+      <img src="{% static 'main/images/home/11.jpg' %}" style="width: 460px;border-radius: 30px;" alt="">
+    </div>
+    <div class="col">
+      <img src="{% static 'main/images/home/12.jpg' %}" style="width: 460px;border-radius: 30px; height: 306px;" alt="">
+    </div>
+  </div>
+  <div class="row pt-5 pb-5">
+    <div class="col">
+      <img src="{% static 'main/images/home/10.jpg' %}" style="width: 460px;border-radius: 30px;" alt="">
+    </div>
+    <div class="col">
+      <img src="{% static 'main/images/home/11.jpg' %}" style="width: 460px;border-radius: 30px;" alt="">
+    </div>
+    <div class="col">
+      <img src="{% static 'main/images/home/13.jpg' %}" style="width: 460px;border-radius: 30px; height: 306px;" alt="">
+    </div>
+  </div>
+</div> {% endcomment %}
