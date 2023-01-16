@@ -41,14 +41,14 @@
 }
 
 .catea{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.01);
     width: 1320px !important;
     height: 130vh;
     position: relative;
-    top: 510px;
+    top: 236px;
     left: 95px;
     padding: 30px !important;
-    max-height: 65px;
+    max-height: 106px;
     bottom: 0px;
 }
 .cated{
