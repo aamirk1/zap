@@ -26,6 +26,7 @@
     max-height: 385px;
     bottom: 40px;
 }
+
 .bann{
     background-color: #FFFFFF9E;
     float: left;
@@ -63,7 +64,7 @@
     bottom: 0px;
 }
 .btncolor{
-    background-color: #f36100;
+    background-color: #9f9893;
 }
 .sect1{
     background-color: #EFEFEF;
@@ -73,6 +74,9 @@
 }
 .bgcolor{
     background-color: #f36100;
+}
+.fcolor{
+    color: #f36100;
 }
 
 div>a{
