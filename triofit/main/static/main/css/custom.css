@@ -1,0 +1,89 @@
+#plans {
+    background: url(../images/home/1.png)no-repeat 0px 0px;
+   background-size: cover;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   -ms-background-size: cover;
+   background-attachment: fixed;
+    position:relative;
+}
+/* ---- stats.js ---- */
+
+.count-particles{
+ background: #000022;
+ position: absolute;
+ top: 48px;
+ left: 0;
+ width: 80px;
+ color: #13E8E9;
+ font-size: .8em;
+ text-align: left;
+ text-indent: 4px;
+ line-height: 14px;
+ padding-bottom: 2px;
+ font-weight: bold;
+}
+
+.js-count-particles{
+ font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+ -webkit-user-select: none;
+ margin-top: 5px;
+ margin-left: 5px;
+}
+
+#stats{
+ border-radius: 3px 3px 0 0;
+ overflow: hidden;
+}
+
+.count-particles{
+ border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+ width: 100%;
+ background-image: url('');
+ background-size: cover;
+ background-position: 50% 50%;
+ background-repeat: no-repeat;
+}
+
+#particles-js1{
+ width: 100%;
+ background-image: url('');
+ background-size: cover;
+ background-position: 50% 50%;
+ background-repeat: no-repeat;
+}
+#particles-js2{
+ width: 100%;
+ background-image: url('');
+ background-size: cover;
+ background-position: 50% 50%;
+ background-repeat: no-repeat;
+}
+canvas.particles-js-canvas-el{
+   height:800px!important;
+}
+/*--test--*/
+#toTop {
+   display: none;
+   text-decoration: none;
+   position: fixed;
+   bottom:1%;
+   right: 3%;
+   overflow: hidden;
+   width: 32px;
+   height: 32px;
+   border: none;
+   text-indent: 100%;
+   background: url("../images/move-up.png") no-repeat 0px 0px;
+}
