@@ -501,7 +501,7 @@ letter-spacing:2px;
 
 /*-- //classes--*/
 #plans {
-background: url(../images/home/1.png)no-repeat 0px 0px;
+background: url()no-repeat 0px 0px;
  background-size: cover;
  -webkit-background-size: cover;
  -moz-background-size: cover;
