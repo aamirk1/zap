@@ -1,13 +1,4 @@
-main{
-  background: url(../images/home/1.png)no-repeat 0px 0px;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
-  background-attachment: fixed;
-  position:relative;
-}
+
 *{
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -410,3 +401,4 @@ div>a{
     bottom: 0;
   }
 
+  
