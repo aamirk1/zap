@@ -483,93 +483,7 @@ a, .dropcap, .post-item .title > a:hover, .post .post-left-meta .box.date .day, 
 .woocommerce .widget_product_categories .product-categories li a {
 	border-color: #98b63c;
 }
-.counter.count-box .count-icon .fa::after {
-	border-top-color: #a2c046;
-}
-.counter.count-box:hover .count-icon .fa {
-	background-color: #98b63c;
-}
-.counter.count-box:hover .count-icon .fa::after {
-	border-top-color: #98b63c;
-}
-.btn-primary, .wpcf7-submit, button, input[type='button'], input[type='reset'], input[type='submit'], .jumbotron .carousel-indicators li.active, .post-item .vertical-center span, .post-item .label-wrap .label, .testimonials .testimonial-control, .testimonials .testimonial-control:first-of-type::before, .testimonials .testimonial-control:last-of-type::before, .cta-button, .brochure-box, .project-navigation a, .pagination a.current, .pagination span.current, .sidebar .widget.widget_nav_menu .menu li:hover, .sidebar .widget.widget_nav_menu .menu li.current-menu-item a, .sidebar .widget.widget_nav_menu .menu li a:hover, .panel-group .accordion-toggle[aria-expanded=true], .panel-group .accordion-toggle::before, .panel-group .accordion-toggle.active, .woocommerce a.button, .woocommerce input.button, .woocommerce input.button.alt, .woocommerce button.button, .woocommerce span.onsale, .woocommerce ul.products li.product .onsale, .woocommerce nav.woocommerce-pagination ul li span.current, .woocommerce-page div.product form.cart .button.single_add_to_cart_button, .woocommerce div.product .woocommerce-tabs ul.tabs li.active, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .woocommerce .widget_product_categories .product-categories li a {
-	background-color: #fd7010;
-	color: #ffffff;
-}
-.btn-primary:hover, .wpcf7-submit:hover, button:hover, input[type='button']:hover, input[type='reset']:hover, input[type='submit']:hover, .post-item .vertical-center span:hover, .post-item .label-wrap .label:hover, .testimonials .testimonial-control:hover, .testimonials .testimonial-control:first-of-type:hover::before, .testimonials .testimonial-control:last-of-type:hover::before, .project-navigation a:hover, .pagination a:hover, .project-navigation a:focus, .woocommerce a.button:hover, .woocommerce input.button:hover, .woocommerce input.button.alt:hover, .woocommerce button.button:hover, .woocommerce span.onsale:hover, .woocommerce ul.products li.product .onsale:hover, .woocommerce-page div.product form.cart .button.single_add_to_cart_button:hover, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce div.product .woocommerce-tabs ul.tabs li:hover, body.woocommerce-page .woocommerce-error a.button:hover, body.woocommerce-page .woocommerce-info a.button:hover, body.woocommerce-page .woocommerce-message a.button:hover, .woocommerce .widget_product_categories .product-categories li a:hover {
-	background-color: #f36606;
-	color: #ffffff;
-}
-.woocommerce nav.woocommerce-pagination ul li span.current, .jumbotron .carousel-indicators li.active {
-	border-color: #fd7010;
-}
-.post-item .label-wrap .label::after {
-	border-top-color: #fd7010;
-}
-.pagination a:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce div.product .woocommerce-tabs ul.tabs li.active, .woocommerce div.product .woocommerce-tabs ul.tabs li:hover, .woocommerce .widget_product_categories .product-categories li a {
-	border-color: #f36606;
-}
-.post-item .label-wrap .label:hover::after {
-	border-top-color: #f36606;
-}
-.content a.icon-box .subtitle {
-	color: #a5a5a5;
-}
-.widget-title {
-	color: #9fc612;
-}
-.content .widget-title span.light {
-	color: #464646;
-}
-.content .widget-title, .custom-title, .project-navigation, .post-meta-data, .woocommerce-page .product .summary.entry-summary p.price, .pagination, .woocommerce-pagination {
-	border-style: dashed;
-}
-
-.slid {
-    background:url(../images/About%20us.jpg) no-repeat 0px 0px;
-    background-size: cover;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	-ms-background-size:cover;
-    padding: 8em 0;
-}
-.slid-info {
-    width:38%;
-}
-.slid h4 {
-    color: #fff;
-    font-size: 4em;
-	font-family: 'RacingSansOne-Regular';
-}
-.slid p {
-    color: #fff;
-    font-size: 1em;
-    line-height: 1.8em;
-    margin-top: 2em;
-}
-.banner-bottom{
-  padding: 5em 0;
-}
-.banner-text {
-	text-align: center;
-}
-.banner-text h3{
-	font-size: 4em;
-    margin: 0;
-    color: #fe6d36;
-    font-family: 'OpenSans-CondLight';
-}
-.banner-text p{
-  color: #A0A0A0;
-  font-size: 1.2em;
-  margin: 2em auto 0 auto;
-  width: 72%;
-  line-height: 1.8em;
-}
-.banner-bottom-grids{
-	margin: 6em 0 0 0;
-}	
+	
 .services-grids{
 	margin:2em 0 0 0;
 }
@@ -1526,7 +1440,7 @@ p.sub-text.one {
   background-repeat: no-repeat;
 }
 canvas.particles-js-canvas-el{
-    height:800px!important;
+    height:1500px!important;
 }
 /*--test--*/
 #monials {

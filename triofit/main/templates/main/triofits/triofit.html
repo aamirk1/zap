@@ -1,0 +1,129 @@
+{% extends 'main/layouts/main.html' %}
+{% load static %}
+
+{% block content %}
+    
+{% include 'main/triofits/navbar.html' %}
+{% include 'main/triofits/slider.html' %}
+
+
+
+<section class="sect1">
+  <div class="container-fluid">
+    <div class="row pt-5 text-center">
+    
+      <div class="col-md-3 news mb-5" style="margin-left: 16px;">
+        <img src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-660.jpg?w=900&t=st=1673007801~exp=1673008401~hmac=3a890438513b67f07f4fb679f87a3ffb94ee6e1df6370bbcb165ca503ff00c59"style="height: 130px;" class="card-img-top" alt="small banner">
+        <h5 class="card-title mt-2 text-dark">About Us</h5>
+        <div class="card-body">
+          <p class="card-text text-dark" style="height: 100px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url 'aboutus' %}" class="btn btn-dark mt-2" style="margin-left:65px">Read More</a>
+        </div>
+      </div>
+      <div class="col-md-3 news mb-5" style="margin-left: 16px;">
+        <img src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-660.jpg?w=900&t=st=1673007801~exp=1673008401~hmac=3a890438513b67f07f4fb679f87a3ffb94ee6e1df6370bbcb165ca503ff00c59"style="height: 130px;" class="card-img-top" alt="small banner">
+        <h5 class="card-title mt-2 text-dark">About Us</h5>
+        <div class="card-body">
+          <p class="card-text text-dark" style="height: 100px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url 'aboutus' %}" class="btn btn-dark mt-2" style="margin-left:65px">Read More</a>
+        </div>
+      </div>
+      <div class="col-md-3 news mb-5" style="margin-left: 16px;">
+        <img src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-660.jpg?w=900&t=st=1673007801~exp=1673008401~hmac=3a890438513b67f07f4fb679f87a3ffb94ee6e1df6370bbcb165ca503ff00c59"style="height: 130px;" class="card-img-top" alt="small banner">
+        <h5 class="card-title mt-2 text-dark">About Us</h5>
+        <div class="card-body">
+          <p class="card-text text-dark" style="height: 100px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url 'aboutus' %}" class="btn btn-dark mt-2" style="margin-left:65px">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mt-5">
+    <div class="main" id="plans">
+      <div id="particles-js" style="background-color: rgba(204,204,204,0.75);"></div>
+      <!-- services -->
+      
+      <div class="services" id="services">
+        <div class="container">
+          <div class="ser-top wthree-3 wow fadeInDown">
+            <h1 class="text-center fcolor mt-4 pt-5">Business Objective / Overview</h1>
+              
+          </div>
+        </div>
+      
+  
+      <div class="row my-2 pb-1">
+        <div class="col-md-4" style="border: 1px solid rgba(0,0,0,0.01);border-radius: 169px;padding: 75px;"> 
+          <div class="code code--small code--left aos-init aos-animate" data-aos="fade-up" style="margin-top: 270px;border: 1px solid white;border-radius: 136px;padding: 55px;">
+            <h3 class="text-center text-dark">3rd Party</h3>
+            <p class="text-dark text-center fs-5">Some quick example</p>
+          </div>                   
+        </div>
+        <div class="col-md-4" style="border: 1px solid rgba(0,0,0,0.01);border-radius: 169px;padding: 75px;">
+          <div class="code code--small code--right aos-init aos-animate" data-aos="fade-down" style="border: 1px solid white;border-radius: 136px;padding: 55px;">
+            <h3 class="text-center text-dark">3rd party</h3>
+            <p class="text-dark text-center fs-5">Some quick example</p>
+          </div>   
+        </div>
+        <div class="col-md-4" style="border: 1px solid rgba(0,0,0,0.01);border-radius: 169px;padding: 75px;">
+          <div class="code code--small code--left aos-init" data-aos="fade-right" style="margin-top: 270px;border: 1px solid white;border-radius: 136px;padding: 55px;">
+            <h3 class="text-center text-dark">3rd party</h3>
+            <p class="text-dark text-center fs-5">Some quick example</p>
+          </div>   
+        </div>
+      </div>
+      <div class="row my-2 pt-2 pb-1">
+        <div class="col-md-4" style="border: 1px solid rgba(0,0,0,0.01);border-radius: 169px;padding: 75px;"> 
+          <div class="code code--small code--right aos-init" data-aos="fade-left" style="border: 1px solid white;border-radius: 136px;padding: 55px;">
+            <h3 class="text-center text-dark">3rd party</h3>
+            <p class="text-dark text-center fs-5">Some quick example</p>
+          </div>                   
+        </div>
+        <div class="col-md-4" style="border: 1px solid rgba(0,0,0,0.01);border-radius: 169px;padding: 75px;">
+          <div class="code code--small code--text-darkleft aos-init" data-aos="fade-up-right" style="margin-top: 270px;border: 1px solid white;border-radius: 136px;padding: 55px;">
+            <h3 class="text-center text-dark">3rd party</h3>
+            <p class="text-dark text-center fs-5">Some quick example</p>
+          </div>   
+        </div>
+        <div class="col-md-4" style="border: 1px solid rgba(0,0,0,0.01);border-radius: 169px;padding: 75px;">
+          <div class="code code--small code--right aos-init" data-aos="fade-up-left" style="border: 1px solid white;border-radius: 136px;padding: 55px;">
+            <h3 class="text-center text-dark">3rd party</h3>
+            <p class="text-dark text-center fs-5">Some quick example</p>
+          </div>   
+        </div>
+      </div>
+      </div>
+    </div>
+      
+  </section>      
+  <section>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{{ category.name }}</h1>
+                <div class="row"style="margin-bottom: 30px;">
+                    {% for item in products %}
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="{% url 'productview' item.category.slug item.slug %}">
+                                <div class="card-body">
+                                    <div class="category-image">
+                                        <img src="{{ item.product_image.url }}"alt="product-image" class="w-100" height=300>
+                                    </div>
+                                    <h4 class="text-center">{{ item.name }}</h4>
+                                    <span class="float-start text-dark"><s>Rs {{ item.orginal_price | stringformat:'d' }}</s></span>
+                                    <span class="float-end text-dark">Rs {{ item.selling_price | stringformat:'d' }}</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </section>
+{% endblock content %}

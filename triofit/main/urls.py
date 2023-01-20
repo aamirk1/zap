@@ -35,7 +35,6 @@ urlpatterns = [
     path('events',pages.events,name='events'),
     path('productrange',pages.productrange,name='productrange'),
 
-    
     path('triofit',pages.triofit,name='triofit'),
 ]
 

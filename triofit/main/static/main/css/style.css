@@ -150,11 +150,14 @@ div>a{
 .foofooter{
     display: flex;
     background-color: #0a0a0a;
-    height: 350px;
+    height: 500px;
     padding: 20px;
 }
 .f-1{
-    margin: 10px 30px;
+    margin: 10px 20px;
+}
+.fabout{
+  margin-right: 60px;
 }
 .f-1 ul{
     list-style: none;
