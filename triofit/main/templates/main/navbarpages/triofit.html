@@ -4,10 +4,33 @@
 {% block content %}
     
 {% include 'main/inc/navbar.html' %}
+<div class="py-3 bgcolor">
+  <div class="container">
+      <a class="text-white" href="{% url 'home' %}">Home /</a>
+      <a class="text-white" href="{% url 'collection' %}">Categories</a>
+      
+  </div>
+</div>
 {% include 'main/triofits/slider.html' %}
 
-{% comment %} 
-<div class="container">
+<div class="container mt-5">
+  <div class="col-md-6">
+    <img src="{% static 'main/images/home/4.png' %}" alt="">
+  </div>
+  <div class="col-md-6">
+    <h1 class="fw-bold">Lorem Heading</h1>
+    <p class="text-dark fs-4">
+      Quod, qui a. Aspernatur commodi aliquam esse quia cumque, dolorum earum sequi culpa, et deserunt delectus hic. Eveniet tempora voluptas possimus molestias, blanditiis odit laboriosam quis saepe sequi assumenda deleniti!
+      Suscipit iste autem dolorum sapiente praesentium, illum voluptatibus cupiditate, labore molestiae quos odit laboriosam in qui, ex nisi modi laborum explicabo assumenda harum earum magni dolore laudantium soluta. Doloremque, reiciendis.
+      Eius assumenda sit fugiat similique harum blanditiis dicta alias. Odit inventore unde voluptate laboriosam possimus blanditiis eveniet pariatur, dignissimos cupiditate rerum incidunt ab necessitatibus qui fugiat ipsum iusto quos placeat.
+      Error, culpa ipsum! Ad vero voluptatum ullam quae sunt odio veniam reprehenderit magni officia amet vel iure eveniet repellat dicta voluptate eum alias, cum culpa dolores labore qui inventore iusto.
+      Laboriosam in molestias reprehenderit, recusandae aspernatur error quisquam cumque beatae sequi, ipsam, ipsa assumenda! Molestias magnam, tenetur fuga repellendus illo excepturi. Tenetur consequuntur sint in totam quo cupiditate porro reprehenderit?
+    </p>
+    <a class="btn btn-dark" href="#" >Button</a>
+  </div>
+</div>
+
+{% comment %} <div class="container">
   <div class="row">
       <div class="col-md-12">
           <h1>{{ category.name }}</h1>
@@ -33,39 +56,31 @@
   </div>
 </div> {% endcomment %}
 
-
-<section class="sect1">
-  <div class="container-fluid">
-    <div class="row pt-5 text-center">
-    
-      <div class="col-md-3 news mb-5" style="margin-left: 16px;">
-        <img src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-660.jpg?w=900&t=st=1673007801~exp=1673008401~hmac=3a890438513b67f07f4fb679f87a3ffb94ee6e1df6370bbcb165ca503ff00c59"style="height: 130px;" class="card-img-top" alt="small banner">
-        <h5 class="card-title mt-2 text-dark">About Us</h5>
-        <div class="card-body">
-          <p class="card-text text-dark" style="height: 100px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="{% url 'aboutus' %}" class="btn btn-dark mt-2" style="margin-left:65px">Read More</a>
-        </div>
+<div class="container mt-5">
+  <div class="row">
+      <div class="col-md-12">
+          <h1>Categories</h1>
+          <hr>
+          <div class="row">
+              {% for item in new %}
+              <div class="col-md-3">
+                  <div class="card">
+                      <a href="{% url 'collectionview' item.slug %}">
+                          <div class="card-body">
+                              <div class="category-image">
+                                  <img src="{{ item.image.url }}" alt="category-image" class="w-100">
+                              </div>
+                              <h4 class="text-center fs-6">{{ item.name }}</h4>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+          {% endfor %}
+          </div>
       </div>
-      <div class="col-md-3 news mb-5" style="margin-left: 16px;">
-        <img src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-660.jpg?w=900&t=st=1673007801~exp=1673008401~hmac=3a890438513b67f07f4fb679f87a3ffb94ee6e1df6370bbcb165ca503ff00c59"style="height: 130px;" class="card-img-top" alt="small banner">
-        <h5 class="card-title mt-2 text-dark">About Us</h5>
-        <div class="card-body">
-          <p class="card-text text-dark" style="height: 100px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="{% url 'aboutus' %}" class="btn btn-dark mt-2" style="margin-left:65px">Read More</a>
-        </div>
-      </div>
-      <div class="col-md-3 news mb-5" style="margin-left: 16px;">
-        <img src="https://img.freepik.com/free-psd/gym-fitness-web-banner-template_106176-660.jpg?w=900&t=st=1673007801~exp=1673008401~hmac=3a890438513b67f07f4fb679f87a3ffb94ee6e1df6370bbcb165ca503ff00c59"style="height: 130px;" class="card-img-top" alt="small banner">
-        <h5 class="card-title mt-2 text-dark">About Us</h5>
-        <div class="card-body">
-          <p class="card-text text-dark" style="height: 100px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="{% url 'aboutus' %}" class="btn btn-dark mt-2" style="margin-left:65px">Read More</a>
-        </div>
-      </div>
-    </div>
   </div>
-</section>
-<section class="mt-5">
+</div>
+{% comment %} <section class="mt-5">
     <div class="main" id="plans">
       <div id="particles-js" style="background-color: rgba(204,204,204,0.75);"></div>
       <!-- services -->
@@ -120,36 +135,7 @@
         </div>
       </div>
       </div>
-    </div>
+    </div> 
       
-  </section>      
-  <section>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>{{ category.name }}</h1>
-                <div class="row"style="margin-bottom: 30px;">
-                    {% for item in products %}
-                    <div class="col-md-4">
-                        <div class="card">
-                            <a href="{% url 'productview' item.category.slug item.slug %}">
-                                <div class="card-body">
-                                    <div class="category-image">
-                                        <img src="{{ item.product_image.url }}"alt="product-image" class="w-100" height=300>
-                                    </div>
-                                    <h4 class="text-center">{{ item.name }}</h4>
-                                    <span class="float-start text-dark"><s>Rs {{ item.orginal_price | stringformat:'d' }}</s></span>
-                                    <span class="float-end text-dark">Rs {{ item.selling_price | stringformat:'d' }}</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-
-  </section>
+  </section>  {% endcomment %}
 {% endblock content %}

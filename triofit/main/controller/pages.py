@@ -22,14 +22,16 @@ def productrange(request):
     return render(request, 'main/navbarpages/productrange.html')
     
 def triofit(request):
-    # if(Category.objects.filter(slug=slug,status=0)):
-    #     products = Product.objects.filter(category__slug=slug)
-    #     category = Category.objects.filter(slug=slug).first()
-    #     context = {'products':products,'category':category}
-    return render(request, 'main/navbarpages/triofit.html')
+    new = Category.objects.filter(status=0)
+    context = {'new':new}
+    return render(request, 'main/navbarpages/triofit.html',context)
     
-    # else:
-    #     messages.warning(request, 'No Such Category found!')
-    #     return redirect('home')
-
-    
+# def triofit(request,slug):
+#     if(Category.objects.filter(slug=slug,status=0)):
+#         products = Product.objects.filter(category__slug=slug)
+#         category = Category.objects.filter(slug=slug).first()
+#         context = {'products':products,'category':category}
+#         return render(request, 'main/navbarpages/triofit.html',context)
+#     else:
+#         messages.warning(request, 'No Such Category found!')
+#         return redirect('home')
