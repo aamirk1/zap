@@ -26,7 +26,7 @@ def triofit(request):
     #     products = Product.objects.filter(category__slug=slug)
     #     category = Category.objects.filter(slug=slug).first()
     #     context = {'products':products,'category':category}
-    return render(request, 'main/triofits/triofit.html')
+    return render(request, 'main/navbarpages/triofit.html')
     
     # else:
     #     messages.warning(request, 'No Such Category found!')
