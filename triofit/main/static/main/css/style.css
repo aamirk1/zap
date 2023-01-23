@@ -90,7 +90,7 @@
 .sect1{
     background-color: #EFEFEF;
 }
-.navbarcolor,.product_data{
+.navbarcolor{
     background: #cccccc
 }
 .bgcolor{
@@ -197,7 +197,7 @@ div>a{
     height: 380px;
     position: relative;
     top: 10px;
-    left: 190px;
+    left: 90px;
     display: flex;
 }
 .footext1{

@@ -36,5 +36,7 @@ urlpatterns = [
     path('productrange',pages.productrange,name='productrange'),
 
     path('triofit',pages.triofit,name='triofit'),
+    
+    # path('cate/',pages.cate,name='cate'),
 ]
 
