@@ -6,6 +6,60 @@
 {% include 'main/inc/navbar.html' %}
 {% include 'main/inc/slider.html' %}
 
+<div class="container mt-5">
+  <h1 class="text-center mt-5 mb-5">company profile</h1>
+  <div class="tab mt-3">
+    <button class="tablinks active" onclick="openCity(event, 'Aboutus')">About Us</button>
+    <button class="tablinks" onclick="openCity(event, 'Whoweare')" style="margin-left: 5px;">Who We Are</button>
+    <button class="tablinks" onclick="openCity(event, 'Whatwedo')" style="margin-left: 5px;">What We Do</button>
+    <button class="tablinks" onclick="openCity(event, 'Whychooseus')" style="margin-left: 5px;">Why Choose Us</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="Aboutus" class="tabcontent">
+    <h3>About Us</h3>
+    <div class="col-md-8">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, quis. Asperiores, fuga dolore officiis laudantium omnis cupiditate repellendus minus reprehenderit quod eaque. Vel deserunt excepturi quos aliquid quidem cupiditate ratione.
+      Dolor suscipit placeat eum iure blanditiis quo odit omnis cupiditate vero. Quia excepturi sequi ullam officiis voluptatum consectetur saepe autem ipsam soluta debitis unde labore, quas cum temporibus aliquid itaque!</p>
+    </div>
+    <div class="col-md-4">
+      <img src="{% static 'main/images/home/off.jpeg' %}" width="300px" alt="">
+    </div>
+  </div>
+  
+  <div id="Whoweare" class="tabcontent">
+    <h3>Who We Are</h3>
+    <div class="col-md-8">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, quis. Asperiores, fuga dolore officiis laudantium omnis cupiditate repellendus minus reprehenderit quod eaque. Vel deserunt excepturi quos aliquid quidem cupiditate ratione.
+      Dolor suscipit placeat eum iure blanditiis quo odit omnis cupiditate vero. Quia excepturi sequi ullam officiis voluptatum consectetur saepe autem ipsam soluta debitis unde labore, quas cum temporibus aliquid itaque!</p>
+    </div>
+    <div class="col-md-4">
+      <img src="{% static 'main/images/home/bu2.jpg' %}" width="300px" alt="">
+    </div>
+  </div>
+  
+  <div id="Whatwedo" class="tabcontent">
+    <h3>What We Do</h3>
+    <div class="col-md-8">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, quis. Asperiores, fuga dolore officiis laudantium omnis cupiditate repellendus minus reprehenderit quod eaque. Vel deserunt excepturi quos aliquid quidem cupiditate ratione.
+      Dolor suscipit placeat eum iure blanditiis quo odit omnis cupiditate vero. Quia excepturi sequi ullam officiis voluptatum consectetur saepe autem ipsam soluta debitis unde labore, quas cum temporibus aliquid itaque!</p>
+    </div>
+    <div class="col-md-4">
+      <img src="{% static 'main/images/home/bu4.jpg' %}" width="300px" alt="">
+    </div>
+  </div>
+  <div id="Whychooseus" class="tabcontent">
+    <h3>Why Choose Us</h3>
+    <div class="col-md-8">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, quis. Asperiores, fuga dolore officiis laudantium omnis cupiditate repellendus minus reprehenderit quod eaque. Vel deserunt excepturi quos aliquid quidem cupiditate ratione.
+      Dolor suscipit placeat eum iure blanditiis quo odit omnis cupiditate vero. Quia excepturi sequi ullam officiis voluptatum consectetur saepe autem ipsam soluta debitis unde labore, quas cum temporibus aliquid itaque!</p>
+    </div>
+    <div class="col-md-4">
+      <img src="{% static 'main/images/home/bu3.jpeg' %}" width="300px" alt="">
+    </div>
+  </div>
+</div>
+
 <section class="mt-5">
   <div class="container-fluid pt-4" style="margin-top: 115px;margin-bottom: 115px;">
     <div class="row">
@@ -313,67 +367,26 @@
   </div>
 </section>
 
-
-
-{% comment %} 
-<section class="mt-5">
-  <div class="main" id="plans">
-    <div id="particles-js" style="background-color: rgba(204,204,204,0.75);"></div>
-    <!-- services -->
-    
-    <div class="services" id="services">
-      <div class="container">
-        <div class="ser-top wthree-3 wow fadeInDown">
-          <h1 class="text-center fcolor mt-4 pt-5">Business Objective / Overview</h1>
-            
-        </div>
+<section class="mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="{% static 'main/images/new/arm.jpg' %}" width="250px" height="150px" alt="">
       </div>
-    
-
-    <div class="row my-2 pb-1">
-      <div class="col-md-4" style="border: 1px solid rgba(0,0,0,0.01);border-radius: 169px;padding: 75px;"> 
-        <div class="code code--small code--left aos-init aos-animate" data-aos="fade-up" style="margin-top: 270px;border: 1px solid white;border-radius: 136px;padding: 55px;">
-          <h3 class="text-center text-white">3rd Party</h3>
-          <p class="text-white text-center fs-5">Some quick example</p>
-        </div>                   
+      <div class="col">
+        <img src="{% static 'main/images/new/mp.jpg' %}" width="250px" height="150px" alt="">
       </div>
-      <div class="col-md-4" style="border: 1px solid rgba(0,0,0,0.01);border-radius: 169px;padding: 75px;">
-        <div class="code code--small code--right aos-init aos-animate" data-aos="fade-down" style="border: 1px solid white;border-radius: 136px;padding: 55px;">
-          <h3 class="text-center text-white">3rd party</h3>
-          <p class="text-white text-center fs-5">Some quick example</p>
-        </div>   
+      <div class="col">
+        <img src="{% static 'main/images/new/bo.jpg' %}" width="250px" height="150px" alt="">
       </div>
-      <div class="col-md-4" style="border: 1px solid rgba(0,0,0,0.01);border-radius: 169px;padding: 75px;">
-        <div class="code code--small code--left aos-init" data-aos="fade-right" style="margin-top: 270px;border: 1px solid white;border-radius: 136px;padding: 55px;">
-          <h3 class="text-center text-white">3rd party</h3>
-          <p class="text-white text-center fs-5">Some quick example</p>
-        </div>   
+      <div class="col">
+        <img src="{% static 'main/images/new/arm.jpg' %}" width="250px" height="150px" alt="">
       </div>
-    </div>
-    <div class="row my-2 pt-2 pb-1">
-      <div class="col-md-4" style="border: 1px solid rgba(0,0,0,0.01);border-radius: 169px;padding: 75px;"> 
-        <div class="code code--small code--right aos-init" data-aos="fade-left" style="border: 1px solid white;border-radius: 136px;padding: 55px;">
-          <h3 class="text-center text-white">3rd party</h3>
-          <p class="text-white text-center fs-5">Some quick example</p>
-        </div>                   
-      </div>
-      <div class="col-md-4" style="border: 1px solid rgba(0,0,0,0.01);border-radius: 169px;padding: 75px;">
-        <div class="code code--small code--left aos-init" data-aos="fade-up-right" style="margin-top: 270px;border: 1px solid white;border-radius: 136px;padding: 55px;">
-          <h3 class="text-center text-white">3rd party</h3>
-          <p class="text-white text-center fs-5">Some quick example</p>
-        </div>   
-      </div>
-      <div class="col-md-4" style="border: 1px solid rgba(0,0,0,0.01);border-radius: 169px;padding: 75px;">
-        <div class="code code--small code--right aos-init" data-aos="fade-up-left" style="border: 1px solid white;border-radius: 136px;padding: 55px;">
-          <h3 class="text-center text-white">3rd party</h3>
-          <p class="text-white text-center fs-5">Some quick example</p>
-        </div>   
-      </div>
-    </div>
     </div>
   </div>
-    
-</section> {% endcomment %}
+</section>
+
+
 
 {% endblock content %}
 {% comment %} <section class="section">

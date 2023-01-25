@@ -1,56 +1,52 @@
 {% comment %} {% extends 'main/layouts/main.html' %} {% endcomment %}
 {% load static %}
-<div class="foofooter">
-    <div class="f-1">
-        <h2>About Us</h2>
-        <p class="text-white fs-4">Triofit Nutracare PVT.LTD. Is Engaged In The <br>Business Of Manufacturing & Marketing Of <br>Healthcare & Nutraceutical Products Of <br>Varied Range In Powder, Capsules, General <br>Tablets & Effervescent Tablets</p>
-    </div>
-    <div class="f-1 useful">
-        <h2>Useful Links</h2>
-        <ul>
-            
-            <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="{% url 'aboutus' %}">About Us</a></li>
-            <li><a href="#">Business Development</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="http://127.0.0.1:8000/admin/login/?next=/admin/">Admin Login</a></li>
-            <li><a href="{% url 'gallery' %}">Gallery</a></li>
-            <li><a href="#">Enquiry</a></li>
-        </ul>
-    </div>
-    <div class="f-1">
-        <h2>Contact Us</h2>
-        <ul>
-            <li><a href="tel:9975810075">9975810075</a></li>
-            <li><a href="mailto:info@triofit.com">info@triofit.com</a></li>
-            <li><a href="mailto:marketing@triofit.com">marketing@triofit.com</a></li>
-        </ul>
-    </div>
-    <div class="f-1">
-        <h2>Social</h2>
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">YouTube</a></li>
-        </ul>
-    </div>
-    <div class="fooright-content">
-        
-        <div class="fooright">
-            <p class="footext1">Register Office</p>
-            <p class="footext2">Triofit Nutracare private limited<br>
-                plot j-1/22,<br>
-                Tata Steel Road,<br>
-                Tarapur MIDC,<br>
-                boisar-401506,<br>
-                Maharashtra,India.<br>
-                Mobile No.: <span style="color: gold;">9975810075</span>
-            </p>
+<section class="bg-dark">
+    <div class="container-fluid bg-dark ptb-5">
+        <div class="row pt-5 pb-5">
+            <div class="col-md-3 text-white">
+                <h3>About Us</h3>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ab similique qui officia nesciunt quaerat voluptas architecto accusantium, pariatur provident doloribus repudiandae voluptatem ratione maiores quo magni, asperiores quasi culpa.</h4>
+            </div>
+            <div class="col-md-3 text-white">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>contact us</li>
+                    <li>about us</li>
+                    <li>services</li>
+                    <li>Business Development</li>
+                </ul>
+            </div>
+            <div class="col-md-3 text-white">
+                <h3>contact us</h3>
+            </div>
+            <div class="col-md-3">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="{% static 'main/images/2015.jpg' %}"class="certify" height="370px" width="330px" alt="cetificates">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'main/images/2018.jpg' %}"class="certify" height="370px" width="330px" alt="cetificates">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'main/images/GMP.jpg' %}"class="certify" height="370px" width="330px" alt="cetificates">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'main/images/TRIOFIT.jpg' %}"class="certify" height="370px" width="330px" alt="cetificates">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'main/images/HACCP.jpg' %}"class="certify" height="370px" width="330px" alt="cetificates">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </div>
+        
     </div>
-    
-</div>
-<div class="foocopy">
-    Copyright &copy; <?php echo date('Y')?> &nbsp;<a href="#">triofit.com</a>
-    <span class="foocard"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd53rsgZUQ1IcJavNNywppBKDIEZd52JSuAd5NKQ6gjZR7PluwwNfvDIapigvMnUj7JfE0gTyEqM8Zms_xm_fSb7BNQF2P-on6n9HVZbCb8VmZCmQJhz_TpnTuLCleWaPrj6BxSviFpQF8w1o94B3QAdRkRatC6fj3U3tjOYNaoO6N7a_r0I13Ylg9/s320/allcard.png"></span>
-</div>
+    <hr>
+    <div class="foocopy mt-3">
+        Copyright &copy; <?php echo date('Y')?> &nbsp;<a href="#">triofit.com</a>
+        <span class="foocard"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd53rsgZUQ1IcJavNNywppBKDIEZd52JSuAd5NKQ6gjZR7PluwwNfvDIapigvMnUj7JfE0gTyEqM8Zms_xm_fSb7BNQF2P-on6n9HVZbCb8VmZCmQJhz_TpnTuLCleWaPrj6BxSviFpQF8w1o94B3QAdRkRatC6fj3U3tjOYNaoO6N7a_r0I13Ylg9/s320/allcard.png"></span>
+    </div>
+</section>

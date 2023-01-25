@@ -1,0 +1,66 @@
+{% comment %} {% extends 'main/layouts/main.html' %} {% endcomment %}
+{% load static %}
+<div class="foofooter">
+    <div class="f-1">
+        <h2>About Us</h2>
+        <p class="text-white fs-4">Triofit Nutracare PVT.LTD. Is Engaged In The <br>Business Of Manufacturing & Marketing Of <br>Healthcare & Nutraceutical Products Of <br>Varied Range In Powder, Capsules, General <br>Tablets & Effervescent Tablets</p>
+    </div>
+    <div class="f-1 useful">
+        <h2>Useful Links</h2>
+        <ul>
+            
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'aboutus' %}">About Us</a></li>
+            <li><a href="#">Business Development</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="http://127.0.0.1:8000/admin/login/?next=/admin/">Admin Login</a></li>
+            <li><a href="{% url 'gallery' %}">Gallery</a></li>
+            <li><a href="#">Enquiry</a></li>
+        </ul>
+    </div>
+    <div class="f-1">
+        <h2>Contact Us</h2>
+        <ul>
+            <li><a href="tel:9975810075">9975810075</a></li>
+            <li><a href="mailto:info@triofit.com">info@triofit.com</a></li>
+            <li><a href="mailto:marketing@triofit.com">marketing@triofit.com</a></li>
+        </ul>
+    </div>
+    <div class="f-1">
+        <h2>Social</h2>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+        </ul>
+    </div>
+    <div class="fooright-content">
+        
+        <div class="fooright">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{% static 'main/images/2015.jpg' %}"class="certify" height="370px" width="350px" alt="cetificates">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'main/images/2018.jpg' %}"class="certify" height="370px" width="350px" alt="cetificates">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'main/images/GMP.jpg' %}"class="certify" height="370px" width="350px" alt="cetificates">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'main/images/TRIOFIT.jpg' %}"class="certify" height="370px" width="350px" alt="cetificates">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'main/images/HACCP.jpg' %}"class="certify" height="370px" width="350px" alt="cetificates">
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+</div>
+<div class="foocopy">
+    Copyright &copy; <?php echo date('Y')?> &nbsp;<a href="#">triofit.com</a>
+    <span class="foocard"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd53rsgZUQ1IcJavNNywppBKDIEZd52JSuAd5NKQ6gjZR7PluwwNfvDIapigvMnUj7JfE0gTyEqM8Zms_xm_fSb7BNQF2P-on6n9HVZbCb8VmZCmQJhz_TpnTuLCleWaPrj6BxSviFpQF8w1o94B3QAdRkRatC6fj3U3tjOYNaoO6N7a_r0I13Ylg9/s320/allcard.png"></span>
+</div>
