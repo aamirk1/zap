@@ -1,6 +1,7 @@
+from django.core.mail import send_mail
 from django.contrib.auth.forms import UserCreationForm
 
-from .models import User
+from .models import User, Contact
 from django import forms
 class CustomUserForm(UserCreationForm):
     username = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control my-2','placeholder':'Enter Username'}), max_length=50, required=True)
@@ -11,11 +12,14 @@ class CustomUserForm(UserCreationForm):
         model = User
         fields = ['username','email','password1','password2']
 
-# class Contactus(ContactUsForm):
-    # name = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control my-2','placeholder':'Enter Name'}), max_length=100, required=True)
-    # email = forms.CharField(widget=forms.EmailInput(attrs={'class':'form-control my-2','placeholder':'Enter Email'}),max_length=100, required=True)
-    # mobile = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control my-2','placeholder':'Enter Mobile Number'}),max_length=100, required=True)
-    # comment= forms.CharField(widget=forms.TextInput(attrs={'class':'form-control my-2','placeholder':'Enter Mobile Number'}),max_length=500, required=True)
-    # class Meta:
-    #     model = ContactUs
-    #     fields = ['name','email','mobile','comment']
+    
+class ContactForm(forms.ModelForm):
+    class Meta:
+        model = Contact
+        fields = ['name', 'email', 'message']
+
+        widgets = {
+            'name': forms.TextInput(attrs={'placeholder':'Enter your Name','class': 'con'}),
+            'email': forms.TextInput(attrs={'placeholder':'Enter your Email','class': 'con'}),
+            'message': forms.TextInput(attrs={'placeholder':'Enter your Message','class': 'con2'}),
+        }

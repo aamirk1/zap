@@ -93,3 +93,12 @@ class OrderItem(models.Model):
     quantity = models.IntegerField(null=False)
     def __str__(self):
         return '{} - {}'.format(self.order.id, self.order.tracking_no)
+
+
+class Contact(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    message = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    def __str__(self):
+        return self.name

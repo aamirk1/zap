@@ -36,3 +36,15 @@ def productview(request,cate_slug,prod_slug):
         messages.error(request,'No Such Category Found')
         return redirect('collection')
     return render(request, 'main/products/view.html',context)
+
+
+
+# def contact_view(request):
+#     if request.method == 'POST':
+#         form = ContactForm(request.POST)
+#         if form.is_valid():
+#             form.send_email()
+#             return HttpResponseRedirect('/success/')
+#     else:
+#         form = ContactForm()
+#     return render(request, 'contactus.html', {'form': form})
