@@ -32,7 +32,12 @@ class Product(models.Model):
     short_description = models.TextField(("Short Description"),max_length=200,null=False,blank=False)
     quantity = models.IntegerField(null =False,blank=False)
     description = models.TextField(("Description"),max_length=600,null=False,blank=False)
+    howtouse = models.TextField(("How to Use"),default="Not Availabel",max_length=600,null=False,blank=False)
+    benefits = models.TextField(("benefits"),default="Not Availabel",max_length=600,null=False,blank=False)
+    whyuseinstapeel = models.TextField(("Why Use Instapeel"),default="Not Availabel",max_length=600,null=False,blank=False)
     ingridient = models.TextField(("Ingridient"),default="Not Availabel",max_length=500,null=False,blank=False)
+
+
     orginal_price = models.FloatField(null =False,blank=False)
     selling_price = models.FloatField(null =False,blank=False)
     status = models.BooleanField(default=False,help_text="0=default, 1=Hidden")

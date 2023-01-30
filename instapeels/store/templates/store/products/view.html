@@ -21,7 +21,7 @@
                                 {% if products.tag %}
                                     <label class="product-viewtag">{{ products.tag }}</label>
                                 {% endif %}
-                                <img src="{{ products.product_image.url }}" alt="product-image"  class="w-100" height=300>
+                                <img src="{{ products.product_image.url }}" alt="product-image"  class="w-100" height=400>
                             </div>
                             <div class="col-md-8">
                                 <h2 class="mb-0">
@@ -66,75 +66,38 @@
                             </div>
                         </div>
                         <hr>
-                        <div class="col-md-12">
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header accor" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                      Description
-                                    </button>
-                                  </h2>
-                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                      {{ products.description }}
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header accor" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                      Ingridient
-                                    </button>
-                                  </h2>
-                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                      {{products.ingridient}}
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header accor" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                      Shipping
-                                    </button>
-                                  </h2>
-                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                            {% comment %} <p>
-                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Description</a>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Ingredients</button>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Toggle Three</button>
-                              </p>
-                              <div class="row">
-                                <div class="col-lg-12">
-                                  <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                    <div class="card card-body">
-                                      {{ products.description }}
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col">
-                                  <div class="collapse multi-collapse" id="multiCollapseExample2">
-                                    <div class="card card-body">
-                                      2 Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col">
-                                    <div class="collapse multi-collapse" id="multiCollapseExample3">
-                                      <div class="card card-body">
-                                        3 Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-                        </div> {% endcomment %}
+                        <div class="container">
+                          
+                            
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <h2>Benefits</h2>
+                              <p>{{ products.benefits }}</p>
+                            </div>
+                            
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <h2>Why Use Instapeel</h2>
+                              <p>{{ products.whyuseinstapeel}}</p>
+                            </div>
+                            
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <h2>How to Use</h2>
+                              <p>{{ products.howtouse}}</p>
+                            </div>
+                            
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <h2>Ingridient</h2>
+                              <p>{{ products.ingridient}}</p>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>

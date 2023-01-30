@@ -1,14 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;
+background-image: url('db.jpeg');
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  
+  width: 20%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.img2{
+    width: 40px;
+    position: relative;
+    bottom: 300px;
+    left: 190px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  
+  width: 80%;
+  border-left: none;
+  height: 300px;
+}
+</style>
 </head>
 <body>
-    <button class="button-30" role="button">Test Button</button>
-    
 
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'synopsis')" id="defaultOpen">Synopsis</button>
+    <button class="tablinks" onclick="openCity(event, 'book')">Book Details</button>
+    <button class="tablinks" onclick="openCity(event, 'characters')">Characters</button>
+</div>
+  
+  <div id="synopsis" class="tabcontent">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, animi ab omnis rerum quasi itaque cum architecto distinctio nisi doloremque. Quo dolorem, laborum magnam perspiciatis suscipit dolores itaque omnis nihil!
+    Culpa illo, architecto eligendi atque ea similique eos aperiam mollitia corporis temporibus tenetur sint error iste iusto obcaecati autem excepturi veniam aliquam ad quisquam numquam reprehenderit non dolores esse. Dolor?</p>
+  </div>
+  
+  <div id="book" class="tabcontent">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus debitis odio! Aspernatur molestiae temporibus ea quam reiciendis accusantium ducimus? Numquam voluptas odio doloremque labore! Autem vitae impedit ea officia.
+    Soluta natus esse beatae eaque et rem pariatur odit. Ullam quos mollitia hic nam ipsam. Expedita, veniam eligendi. Eaque consequatur fuga aliquid veniam quos nulla dolores ad vero fugit commodi.</p> 
+  </div>
+  
+  <div id="characters" class="tabcontent">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus excepturi unde a dolor, illum non magni earum quas. Sunt quis hic excepturi, modi fugit ipsa vero deserunt! Eos, unde veniam?
+    Repudiandae odio hic quia aspernatur minima nostrum cupiditate nulla? Omnis doloribus facere temporibus, aperiam laboriosam dolor ab fuga adipisci repellat commodi ad, aspernatur beatae quam nihil mollitia ex reprehenderit et.</p>
+  </div>
+  <div>
+      <img class="img2" src="li.png" alt="">
+  </div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
 </body>
-</html>
+</html> 
