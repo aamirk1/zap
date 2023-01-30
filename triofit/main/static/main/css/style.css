@@ -170,6 +170,7 @@ p{
 }
 .fcolor{
     color: #f36100;
+    font-size: 50px;
 }
 
 div>a{
@@ -513,3 +514,5 @@ div>a{
 .image-hover:hover {
   opacity: 1;
 }
+
+
