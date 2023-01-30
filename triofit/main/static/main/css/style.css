@@ -308,7 +308,7 @@ div>a{
   .imageo {
     opacity: 1;
     display: block;
-    width: 280px;
+    width: 335px;
     height: 200px;
     transition: .5s ease;
     backface-visibility: hidden;
@@ -515,4 +515,14 @@ div>a{
   opacity: 1;
 }
 
-
+.GFG{
+  
+  width: 175px;
+    height: 230px;
+    border-radius: 2%;
+}
+.GFG:hover{
+  /* color: #bbb;  */
+  /* background: rgba(215,215,215,0.10);  */
+  box-shadow: 0px 0px 8px 5px rgb(0 0 0 / 28%); 
+}

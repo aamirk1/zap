@@ -59,6 +59,14 @@
     <script>
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
+       
+    </script>
+    <script>
+        var myCarousel = document.querySelector('#foocar')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 2000,
+            delay:2s
+        });
     </script>
     
     {% block scripts %}{% endblock scripts %}

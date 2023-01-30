@@ -821,21 +821,9 @@ h3.tittle.two {
 /*-- //team --*/
 /*-- price --*/
 /*-- Contact --*/
-.contact {
-       background:url(../images/footer.jpg) no-repeat 0px 0px;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-	position:relative;
-	padding-bottom: 3em;
-}
 
-p.sub-text {
-    text-align: center;
-    letter-spacing: 9px;
-    color: #168eea;
-}
+
+
 h3.gg {
     text-align: center;
     font-size: 3em;
@@ -1357,9 +1345,6 @@ h3.gg.con {
 		margin: 1em auto;
 		width: 82%;
 	}
-	.banner-top, .banner-top1, .banner-top2 {
-		min-height: 340px;
-	}
 	.agileits-banner-info {
 		text-align: center;
 		padding: 9em 0 0em;
@@ -1384,7 +1369,7 @@ h3.gg.con {
 		padding: 0 5px;
 	}
 	canvas.particles-js-canvas-el {
-		    height: 1400px!important;
+		    height: 1900px!important;
 	}
 	.priceing-table-main {
 		position: absolute;
@@ -1528,173 +1513,8 @@ h3.gg.con {
 		bottom: 17%;
 		left: 48.5%;
 	}
-	.message {
-		margin-bottom: 20px;
-	}
+	
 	.team-grid:nth-child(1),.team-grid:nth-child(3),.team-grid:nth-child(5) {
 		padding-left:0;
-	}
-}
-@media(max-width:384px){
-	.agileits-banner-info p {
-		font-size: 0.8em;
-		letter-spacing: 4px;
-		margin: 1em auto;
-		width: 86%;
-	}
-}
-@media(max-width:375px){
-	.agileits-banner-info p {
-		font-size: 0.8em;
-		letter-spacing:3px;
-		margin: 1em auto;
-		width: 86%;
-	}
-	.banner-top, .banner-top1, .banner-top2 {
-		min-height: 258px;
-	}
-	.agileits-banner-info {
-		text-align: center;
-		padding: 7em 0 0em;
-	}
-	.cc {
-		position: absolute;
-		bottom: 12%;
-		left: 48.5%;
-	}
-	.ii a:before, .ii a:after {
-		content: '';
-		background: #fff;
-		width: 62%;
-		height: 2px;
-		position: absolute;
-		left: 105%;
-		top: 46%;
-	}
-	.ii a {
-		font-size: 13px;
-		letter-spacing: 1px;
-		position: relative;
-	}
-	.ff {
-		padding: 2em 0em 0em 1em;
-	}
-	h2.gg {
-		font-size: 1.6em;
-		letter-spacing: 3px;
-	}
-	.jj {
-		margin-top: 2em;
-	}
-	.jj1 {
-		padding: 2em 1em;
-	}
-	.ab-w3-agile-img {
-		min-height: 291px;
-		padding-top: 0;
-		float: none;
-		width: 100%;
-	}
-	.callbacks_nav.prev {
-		left: auto;
-		background: url(../images/left.png) no-repeat 0px 0px;
-		left: -37px;
-	}
-	.callbacks_nav.next {
-		left: auto;
-		background: url(../images/right.png) no-repeat 0px 0px;
-		right: -40px;
-	}
-	.class-grid h4 {
-		font-size: 1.2em;
-		margin-top: 0;
-		margin: 1em 0 2em 0;
-	}
-	.price-gd-top h4 {                                                                                                                                                                                                     
-		font-size: 1.1em;
-	}
-	.class-grid-img:hover .caption {
-		display: block;
-		position: absolute;
-		top: 45%;
-		left: 25%;
-		z-index: 999;
-	}
-	.modal-content h5 {
-		font-size: 1em;
-	}
-}
-
-@media(max-width:320px){
-	.priceing-table-main {
-		position: absolute;
-		top: 5%;
-		left: 0%;
-		width: 100%;
-	}
-	.price-gd-top h4 {
-		font-size: 1em;
-	}
-	.ih-item.circle {
-		position: relative;
-		width: 130px;
-		height: 130px;
-	}
-	.ih-item.circle .img {
-		position: relative;
-			width: 130px;
-		height: 130px;
-	}
-	.ih-item.circle.effect10.bottom_to_top .info h3 {
-		margin: 5.2em 0 1em 0;
-		font-size: 0.9em;
-		letter-spacing: 1px;
-	}
-	.client_agile_info {
-		padding: 1em;
-	}
-	.agileits-clients {
-		margin-top: 4em;
-	}
-	.social a {
-		margin-right: 12px;
-		font-size: 1em;
-		line-height: 35px;
-	}
-	#map {
-		width: 100%;
-		height: 226px;
-	}
-	.agileits-banner-info h3 {
-		font-size: 1.5em;
-		letter-spacing: 2px;
-	}
-	.class-grid-img:hover .caption {
-		display: block;
-		position: absolute;
-		top: 45%;
-		left: 25%;
-	}
-	.class-grid h4 {
-		font-size: 1em;
-		margin-top: 0;
-		margin: 1em 0 1.5em 0;
-	}
-	h3.gg.three {
-		line-height: 1.4em;
-		letter-spacing: 2px;
-	}
-	p.sub-text {
-		letter-spacing: 5px;
-	}
-	.agileits-banner-info p {
-		font-size: 0.8em;
-		letter-spacing: 2px;
-		margin: 1em auto;
-		width: 86%;
-	}
-	.callbacks_tabs a:after {
-		height: 10px;
-		width: 10px;
 	}
 }
