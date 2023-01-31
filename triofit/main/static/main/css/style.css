@@ -287,10 +287,11 @@ div>a{
 } 
 
 .nav-link{
-    color:#0a0a0a
+    color:#f36100;
+    font-size: 18px;
 }
 .nav-link:hover{
-    color:#f36100
+    color:#c0c0c0;
 }
 .containers {
     position: relative;
@@ -308,7 +309,7 @@ div>a{
   .imageo {
     opacity: 1;
     display: block;
-    width: 335px;
+    width: 350px;
     height: 200px;
     transition: .5s ease;
     backface-visibility: hidden;
@@ -517,12 +518,21 @@ div>a{
 
 .GFG{
   
-  width: 175px;
-    height: 230px;
-    border-radius: 2%;
+  width: 130px;
+  height: 230px;
+  border-radius: 2%;
 }
 .GFG:hover{
   /* color: #bbb;  */
   /* background: rgba(215,215,215,0.10);  */
-  box-shadow: 0px 0px 8px 5px rgb(0 0 0 / 28%); 
+  box-shadow: 0px 0px 8px 5px rgb(0 0 0 / 25%); 
+}
+.GFG2{
+  
+  width: 175px;
+    height: 280px;
+    border-radius: 2%;
+}
+.GFG2:hover{
+  box-shadow: 0px 0px 8px 5px rgb(0 0 0 / 25%); 
 }

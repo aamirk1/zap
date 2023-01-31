@@ -1,20 +1,76 @@
 {% extends 'main/layouts/main.html' %}
+{% load static %}
 {% block content %}
 
 {% include 'main/inc/navbar.html' %}
-<div class="container">
+<div class="container"style="margin-top:40px;">
+    <div class="col-md-6">
+        <div class="row">
+            <h1>Reach out with any questions you have.</h1>
+            <p class="fs-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+        </div>
+        <div class="row mt-5">
+            <p class="fs-2">
+                Plot J-1/22, TATA STEEL ROAD, <br>
+                TARAPUR M.I.D.C, <br>
+                BOISAR – 401506. <br>
+                <a class="text-start" href="" class="btn float-start">Get Direction</a>
+            </p>
+        </div>
+        
+
+    </div>
+    <div class="col-md-6"></div>
+</div>
+<div class="container text-center">
+    <div class="row">
+        <img src="{% static 'main/images/home/logo.png' %}" style="height: 200px;width: 500px;" alt="">
+    </div>
+    <div class="row"style="margin-top: 50px;margin-bottom: 50px;">
+        <div class="col-md-4">
+            <div class="col"style="box-shadow: 0px 1px 3px 2px #bbb;padding: 5px;margin-bottom: 20px;">
+                <h2 class="text-start">Dr. Niraj R Zawar</h2>
+                <p class="fcolor fs-1 text-start">Director</p>
+            </div>
+            <p  class="text-start"><i style="color: #EDBE53;font-size: 20px;" class="fas fa-phone-square-alt"></i> <a class="text-dark fs-3" href="tel:+917021674647">+91 70216 74647</a></p>
+            <p  class="text-start"><i style="color: #EDBE53;font-size: 20px;" class="fas fa-mail-bulk"></i> <a class="text-dark fs-3" href="mailto:DRNIRAJ@KAMLAGROUP.CO.IN">DRNIRAJ@KAMLAGROUP.CO.IN</a></p>
+
+        </div>
+        <div class="col-md-4">
+            <div class="col"style="box-shadow: 0px 1px 3px 2px #bbb;padding: 5px;margin-bottom: 20px;">
+                <h2 class="text-start">Dr. Niraj R Zawar</h2>
+                <p class="fcolor fs-1 text-start">Director</p>
+            </div>
+            <p class="text-start"><i style="color: #EDBE53;font-size: 20px;" class="fas fa-phone-square-alt"></i> <a class="text-dark fs-3" href="tel:+917021674647">+91 70216 74647</a></p>
+            <p  class="text-start"><i style="color: #EDBE53;font-size: 20px;" class="fas fa-mail-bulk"></i> <a class="text-dark fs-3" href="mailto:DRNIRAJ@KAMLAGROUP.CO.IN">DRNIRAJ@KAMLAGROUP.CO.IN</a></p>
+
+        </div>
+        <div class="col-md-4">
+            <div class="col"style="box-shadow: 0px 1px 3px 2px #bbb;padding: 5px;margin-bottom: 20px;">
+                <h2 class="text-start">Dr. Niraj R Zawar</h2>
+                <p class="fcolor fs-1 text-start">Director</p>
+            </div>
+            <p  class="text-start"><i style="color: #EDBE53;font-size: 20px;" class="fas fa-phone-square-alt"></i> <a class="text-dark fs-3" href="tel:+917021674647">+91 70216 74647</a></p>
+            <p  class="text-start"><i style="color: #EDBE53;font-size: 20px;" class="fas fa-mail-bulk"></i> <a class="text-dark fs-3" href="mailto:DRNIRAJ@KAMLAGROUP.CO.IN">DRNIRAJ@KAMLAGROUP.CO.IN</a></p>
+
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% comment %} <div class="container">
     <h1 class="text-dark mt-5">CONTACT US</h1>
     <div class="col-md-4">
-        <h2>Company Address</h2>
+        <h2 class="text-start">Company Address</h2>
         <h4>Triofit Nutraceutical</h4>
         <p>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. Voluptatem debitis doloremque nisi ex, </p>
     </div>
     <div class="col-md-4">
         <ul style="font-size: 18px;margin-top: 60px;">
-            <li>Phone: <a href="tel:9975810075">9975810075</a></li>
-            <li>E-mail: <a href="mailto:info@triofit.com">info@triofit.com</a></li>
-            <li>Phone: <a href="tel:9975810075">9975810075</a></li>
-            <li>Website: <a href="nutralike.com">nutralike.com</a></li>
+            <li>Phone: <a class="text-start" href="tel:9975810075">9975810075</a></li>
+            <li>E-mail: <a class="text-start" href="mailto:info@triofit.com">info@triofit.com</a></li>
+            <li>Phone: <a class="text-start" href="tel:9975810075">9975810075</a></li>
+            <li>Website: <a class="text-start" href="nutralike.com">nutralike.com</a></li>
         </ul>
     </div>
     <div class="col-md-4">
@@ -54,6 +110,4 @@
         </form>
           
     </div>
-</div>
-{% endblock content %}
-
+</div> {% endcomment %}
