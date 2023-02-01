@@ -1,20 +1,23 @@
 {% extends 'main/layouts/main.html' %}
 {% load static %}
 {% block content %}
-
+<div style="margin-top: 61px;margin-bottom:0px;"></div>
 {% include 'main/inc/navbar.html' %}
 <div class="container"style="margin-top:40px;">
     <div class="col-md-6">
-        <div class="row">
-            <h1>Reach out with any questions you have.</h1>
-            <p class="fs-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+        <div class="row" style="margin-top: 50px;margin-bottom: 133px;">
+            <h1 style="font-size: 40px;text-transform: math-auto;font-family: 'Karla', Sans-serif">Reach out with any questions you have.</h1>
+            <p style="font-size: 22px;text-transform: math-auto;font-family: 'Karla', Sans-serif">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
         </div>
-        <div class="row mt-5">
-            <p class="fs-2">
+       
+        <div class="row"style="
+        margin-top: 133px;
+    ">
+            <p style="font-size: 22px;text-transform: math-auto;font-family: 'Karla', Sans-serif">
                 Plot J-1/22, TATA STEEL ROAD, <br>
                 TARAPUR M.I.D.C, <br>
                 BOISAR – 401506. <br>
-                <a class="text-start" href="" class="btn float-start">Get Direction</a>
+                <a class="text-start text-dark" href="#" class="btn float-start">Get Direction </a>&nbsp;<a class="icons" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
             </p>
         </div>
         
@@ -22,39 +25,76 @@
     </div>
     <div class="col-md-6"></div>
 </div>
-<div class="container text-center">
+<div class="container">
     <div class="row">
-        <img src="{% static 'main/images/home/logo.png' %}" style="height: 200px;width: 500px;" alt="">
+        <img class="text-center" src="{% static 'main/images/home/logo.png' %}" style="height: 100px;width: 450px;text-align: center;margin-left: 35%;" alt="">
     </div>
-    <div class="row"style="margin-top: 50px;margin-bottom: 50px;">
+    <div class="row"style="margin-top: 50px;margin-bottom: 100px;font-family: 'Saira', sans-serif;">
         <div class="col-md-4">
-            <div class="col"style="box-shadow: 0px 1px 3px 2px #bbb;padding: 5px;margin-bottom: 20px;">
+            <div class="col"style="box-shadow: 0px 1px 3px 2px #c6c6c6;padding: 5px;margin-bottom: 20px;">
                 <h2 class="text-start">Dr. Niraj R Zawar</h2>
                 <p class="fcolor fs-1 text-start">Director</p>
             </div>
-            <p  class="text-start"><i style="color: #EDBE53;font-size: 20px;" class="fas fa-phone-square-alt"></i> <a class="text-dark fs-3" href="tel:+917021674647">+91 70216 74647</a></p>
-            <p  class="text-start"><i style="color: #EDBE53;font-size: 20px;" class="fas fa-mail-bulk"></i> <a class="text-dark fs-3" href="mailto:DRNIRAJ@KAMLAGROUP.CO.IN">DRNIRAJ@KAMLAGROUP.CO.IN</a></p>
+            <p  class="text-start"><i id="id" class="fas fa-phone-square-alt"></i> <a class="text-dark fs-3" href="tel:+917021674647">+91 70216 74647</a></p>
+            <p  class="text-start"><i id="id" class="fas fa-mail-bulk"></i> <a class="text-dark fs-3" href="mailto:DRNIRAJ@KAMLAGROUP.CO.IN">DRNIRAJ@KAMLAGROUP.CO.IN</a></p>
+
+        </div>
+        <div class="col-md-4"style="">
+            <div class="col"style="box-shadow: 0px 1px 3px 2px #c6c6c6;padding: 5px;margin-bottom: 20px;">
+                <h2 class="text-start">Dr. Niraj R Zawar</h2>
+                <p class="fcolor fs-1 text-start">Director</p>
+            </div>
+            <p class="text-start"><i id="id" class="fas fa-phone-square-alt"></i> <a class="text-dark fs-3" id="id" href="tel:+917021674647">+91 70216 74647</a></p>
+            <p  class="text-start"><i  id="id" class="fas fa-mail-bulk"></i> <a class="text-dark fs-3" href="mailto:DRNIRAJ@KAMLAGROUP.CO.IN">DRNIRAJ@KAMLAGROUP.CO.IN</a></p>
 
         </div>
         <div class="col-md-4">
-            <div class="col"style="box-shadow: 0px 1px 3px 2px #bbb;padding: 5px;margin-bottom: 20px;">
+            <div class="col"style="box-shadow: 0px 1px 3px 2px #c6c6c6;padding: 5px;margin-bottom: 20px;">
                 <h2 class="text-start">Dr. Niraj R Zawar</h2>
                 <p class="fcolor fs-1 text-start">Director</p>
             </div>
-            <p class="text-start"><i style="color: #EDBE53;font-size: 20px;" class="fas fa-phone-square-alt"></i> <a class="text-dark fs-3" href="tel:+917021674647">+91 70216 74647</a></p>
-            <p  class="text-start"><i style="color: #EDBE53;font-size: 20px;" class="fas fa-mail-bulk"></i> <a class="text-dark fs-3" href="mailto:DRNIRAJ@KAMLAGROUP.CO.IN">DRNIRAJ@KAMLAGROUP.CO.IN</a></p>
-
-        </div>
-        <div class="col-md-4">
-            <div class="col"style="box-shadow: 0px 1px 3px 2px #bbb;padding: 5px;margin-bottom: 20px;">
-                <h2 class="text-start">Dr. Niraj R Zawar</h2>
-                <p class="fcolor fs-1 text-start">Director</p>
-            </div>
-            <p  class="text-start"><i style="color: #EDBE53;font-size: 20px;" class="fas fa-phone-square-alt"></i> <a class="text-dark fs-3" href="tel:+917021674647">+91 70216 74647</a></p>
-            <p  class="text-start"><i style="color: #EDBE53;font-size: 20px;" class="fas fa-mail-bulk"></i> <a class="text-dark fs-3" href="mailto:DRNIRAJ@KAMLAGROUP.CO.IN">DRNIRAJ@KAMLAGROUP.CO.IN</a></p>
+            <p  class="text-start"><i id="id" class="fas fa-phone-square-alt"></i> <a class="text-dark fs-3" href="tel:+917021674647">+91 70216 74647</a></p>
+            <p  class="text-start"><i  id="id" class="fas fa-mail-bulk"></i> <a class="text-dark fs-3" href="mailto:DRNIRAJ@KAMLAGROUP.CO.IN">DRNIRAJ@KAMLAGROUP.CO.IN</a></p>
 
         </div>
     </div>
+</div>
+<div class="container-fluid">
+    <div class="bgover">
+        <div class="overla"style="background-color: #21352980;">
+            <div class="shades">
+                <h1>Triple Your Presence</h1>
+                <p class="mt-4 fs-2 shadesp">Sed ut perspiciatis unde omnis iste natus error sit <br> voluptatem accusantium.</p>
+                <button class="en">Enquiry Now</button>                   
+                <div class="">
+                    <div class="col-md-4" style="border: 1px solid rgba(0,0,0,0.01);border-radius: 189px;padding: 204px;top: -510px;left: 500px;">
+                        <div class="code code--small code--left aos-init" data-aos="fade-right" style="border: 1px solid white;border-radius: 136px;padding: 5px;background-color: #fff;">
+                            <a href="#" class="sicon"><i style="padding-left: 10px;" class="fab fa-facebook-f"></i></a>
+                        </div>   
+                      </div>
+                    <div class="col-md-4" style="border: 1px solid rgba(0,0,0,0.01);border-radius: 189px;padding: 204px;top: -452px;left: 532px;">
+                        <div class="code code--small code--right aos-init" data-aos="fade-left" style="border: 1px solid white;border-radius: 136px;padding: 5px;background-color: #fff;">
+                            <a href="#" class="sicon"><i style="padding-left: 6px;" class="fab fa-instagram"></i></a>
+                        </div>   
+                      </div>
+                    <div class="col-md-4" style="border: 1px solid rgba(0,0,0,0.01);border-radius: 189px;padding: 204px;top: -384px;left: -210px;">
+                      <div class="code code--small code--up aos-init" data-aos="fade-down" style="border: 1px solid white;border-radius: 136px;padding: 5px;background-color: #fff;">
+                        <a href="#" class="sicon"><i style="padding-left: 5px;" class="fab fa-twitter"></i></a>
+                      </div>   
+                    </div>
+                    <div class="col-md-4" style="border: 1px solid rgba(0,0,0,0.01);border-radius: 189px;padding: 195px;top: -1030px;left: 740px;">
+                        <div class="code code--small code--up aos-init" data-aos="fade-down" style="border: 1px solid white;border-radius: 136px;padding: 5px;background-color: #fff;">
+                          <a href="#" class="sicon"><i style="padding-left: 8px;" class="fab fa-youtube"></i></a>
+                        </div>   
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    
 </div>
 {% endblock content %}
 
