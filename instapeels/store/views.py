@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib import messages
 from django.shortcuts import redirect
-from .models import Category, Product
+from .models import Category, Product,ProductImage
 # Create your views here.
 def home(request):
     return render(request, 'store/index.html')
@@ -30,7 +30,8 @@ def productview(request,cate_slug,prod_slug):
     if(Category.objects.filter(slug=cate_slug,status=0)):
         if(Product.objects.filter(slug=prod_slug,status=0)):
             products = Product.objects.filter(slug=prod_slug,status=0).first()
-            context = {'products':products}
+            productsimage = ProductImage.objects.all()
+            context = {'products':products,'productsimage':productsimage}
         else:
             messages.error(request,'No Such Product Found')
             # return redirect('collection')

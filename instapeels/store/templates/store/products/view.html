@@ -27,8 +27,12 @@
 
 
                                 <div class="row">
-                                  <a href=""><img src="{{ products.productmultiimage.url }}" alt="product-image"  class="w-25" height=80></a>
+                                  {% for pi in productsimage %}
+                                    <div class="col-md-4"style="width: 70px;">
+                                      <a href="{{ pi.image.url }}" target="_blank"><img src="{{ pi.image.url }}" alt="product-image"  class="img-fluid" style="height:80px;"></a>
+                                    </div>
                                   
+                                  {% endfor %}
                                 </div>
                             </div>
                             <div class="col-md-8">

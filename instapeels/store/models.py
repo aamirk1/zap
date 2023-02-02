@@ -34,7 +34,6 @@ class Product(models.Model):
     slug = models.CharField(("slug"), max_length=50,null=False,blank=False)
     name = models.CharField(("Name"), max_length=150,null=False,blank=False)
     product_image = models.ImageField(upload_to=get_file_path,null=False,blank=False)
-    productmultiimage = models.ImageField(default=None,upload_to=get_file_path_for_multi,null=False,blank=False)
     short_description = models.TextField(("Short Description"),max_length=200,null=False,blank=False)
     quantity = models.IntegerField(null =False,blank=False)
     description = models.TextField(("Description"),max_length=600,null=False,blank=False)
@@ -55,6 +54,13 @@ class Product(models.Model):
     create_at = models.DateTimeField(auto_now_add=True)
     def __str__(self):
         return self.name
+
+class ProductImage(models.Model):
+    product = models.ForeignKey(Product,on_delete=models.CASCADE)
+    image = models.ImageField(upload_to=get_file_path_for_multi,verbose_name='Image')
+    def __str__(self):
+        return self.product.name
+    
 
 class Cart(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
