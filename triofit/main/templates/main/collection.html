@@ -15,12 +15,12 @@
                 <hr>
                 <div class="row">
                     {% for item in ne %}
-                    <div class="col-md-3">
+                    <div class="col-md-3 mt-3 mb-2">
                         <div class="card">
                             <a href="{% url 'collectionview' item.slug %}">
                                 <div class="card-body">
                                     <div class="category-image">
-                                        <img src="{{ item.image.url }}" alt="category-image" class="w-100">
+                                        <img src="{{ item.image.url }}" alt="category-image" class="w-100"style="height: 250px;">
                                     </div>
                                     <h4 class="text-center fs-6">{{ item.name }}</h4>
                                 </div>
