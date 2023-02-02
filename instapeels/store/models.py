@@ -9,6 +9,11 @@ def get_file_path(request,filename):
     nowTime = datetime.datetime.now().strftime('%y%m%d%H:%M%S')
     filename = "%s%s" % (nowTime, orginal_filename)
     return os.path.join('uploads/',filename)
+def get_file_path_for_multi(request,filename):
+    orginal_filename = filename
+    nowTime = datetime.datetime.now().strftime('%y%m%d%H:%M%S')
+    filename = "%s%s" % (nowTime, orginal_filename)
+    return os.path.join('uploads/multiimg/',filename)
 
 class Category(models.Model):
     slug = models.CharField(("slug"), max_length=50,null=False,blank=False)
@@ -29,6 +34,7 @@ class Product(models.Model):
     slug = models.CharField(("slug"), max_length=50,null=False,blank=False)
     name = models.CharField(("Name"), max_length=150,null=False,blank=False)
     product_image = models.ImageField(upload_to=get_file_path,null=False,blank=False)
+    productmultiimage = models.ImageField(default=None,upload_to=get_file_path_for_multi,null=False,blank=False)
     short_description = models.TextField(("Short Description"),max_length=200,null=False,blank=False)
     quantity = models.IntegerField(null =False,blank=False)
     description = models.TextField(("Description"),max_length=600,null=False,blank=False)

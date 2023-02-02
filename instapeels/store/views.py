@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib import messages
 from django.shortcuts import redirect
-from .models import Category, Product  
+from .models import Category, Product
 # Create your views here.
 def home(request):
     return render(request, 'store/index.html')
