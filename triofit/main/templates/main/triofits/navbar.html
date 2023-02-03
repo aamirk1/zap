@@ -13,8 +13,37 @@
           <a class="nav-link {% if request.resolver_match.url_name == 'collection' %}active{% endif %}" href="{% url 'collection' %}">Categories</a>
         </li>
         
+        <li class="nav-item">
+          <a style="color:#000;" class="nav-link {% if request.resolver_match.url_name == 'viewcart' %}active{% endif %}" aria-current="page" href="{% url 'viewcart' %}"><i class="fa fa-cart-shopping"></i></a>
+        </li>
+        <li class="nav-item">
+          <a style="color:#000;" class="nav-link {% if request.resolver_match.url_name == 'wishlist' %}active{% endif %}" aria-current="page" href="{% url 'wishlist' %}"><i class="fa fa-heart"></i></a>
+        </li>
+
+        {% if request.user.is_authenticated %}
+
+          <div class="dropdown">
+            <a class="btn  dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              {{ request.user }}
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a style="color:#000;" class="dropdown-item" href="{% url 'logoutpage' %}">Logout</a></li>
+            </ul>
+          </div>
+        {% else %}
+          <li class="nav-item">
+            <a style="color:#000;" class="nav-link" href="{% url 'loginpage' %}">Login</a>
+          </li>
+          <li class="nav-item">
+            <a style="color:#000;" class="nav-link" href="{% url 'register' %}">Register</a>
+          </li>
+        {% endif %}
+        
 
         
+
+
 
 
       </ul>

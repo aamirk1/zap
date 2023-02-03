@@ -6,39 +6,10 @@
 {% include 'main/inc/navbar.html' %}
 <div class="py-3 bgcolor">
   <div class="container">
-      <ul>
-        <li class="nav-item">
-          <a class="text-white" href="{% url 'collection' %}">Categories</a>
-  
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {% if request.resolver_match.url_name == 'viewcart' %}active{% endif %}" aria-current="page" href="{% url 'viewcart' %}"><i class="fa fa-cart-shopping"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {% if request.resolver_match.url_name == 'wishlist' %}active{% endif %}" aria-current="page" href="{% url 'wishlist' %}"><i class="fa fa-heart"></i></a>
-        </li>
-  
-        {% if request.user.is_authenticated %}
-  
-          <div class="dropdown">
-            <a class="btn  dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              {{ request.user }}
-            </a>
-          
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="{% url 'logoutpage' %}">Logout</a></li>
-            </ul>
-          </div>
-        {% else %}
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'loginpage' %}">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'register' %}">Register</a>
-          </li>
-        {% endif %}
-        
-      </ul>
+    <div class="col-md-8">
+      <a class="text-white" href="{% url 'collection' %}">Categories</a>
+    
+    </div>
   </div>
 </div>
 {% include 'main/triofits/slider.html' %}
