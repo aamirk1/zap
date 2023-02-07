@@ -71,13 +71,31 @@
     </script>
     <script>
         function openForm() {
-            document.getElementById("myForm").style.display = "contents";
+            document.getElementById("myForm").style.display = "flex";
           }
           
           function closeForm() {
             document.getElementById("myForm").style.display = "none";
           }
     </script>
+    {% comment %} <script type="text/javascript">
+        function openForm() {
+            var name = prompt('Please enter your name','');
+            if (name != null && name != "") {
+                alert(name);
+            }
+            
+            var email = prompt('Please enter your email','');
+            if (email != null && email != "") {
+                alert(email);
+            }
+            var mobile = prompt('Please enter your mobile','');
+            if (mobile != null && mobile != "") {
+                alert(mobile);
+            }
+            
+        }
+    </script> {% endcomment %}
     
     {% block scripts %}{% endblock scripts %}
     </body>

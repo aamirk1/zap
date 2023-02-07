@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'synopsis')" id="defaultOpen">Synopsis</button>
+  <button class="tablinks" onclick="openCity(event, 'book')">Book Details</button>
+  <button class="tablinks" onclick="openCity(event, 'characters')">Characters</button>
+</div>
+
+<div id="synopsis" class="tabcontent">
+  <p style="font-size:16.5px;margin-left: 40px;">“তুমি থেকো হৃদ মাঝারে” বইতে যে তিনটি গল্প আছে তাতে ‘জীবনের পোর্ট্রেট’ গল্পটি আমার খুব পরিচিত এক দম্পতির জীবনগাথা। কিছু ঘটনা আর কিছু আমার নিজের কল্পনা মিশিয়ে এঁকেছি জীবনের পোর্ট্রেট। নিলয়কে খুব কাছে থেকে দেখেছি, সম্পর্কের টানাপোড়েন বহু স্বামী-স্ত্রীর মধ্যেই থাকে, তবু একটা সম্পর্ককে বাঁচিয়ে রাখতে নিলয়কে অনেক লড়াইয়ের সম্মুখীন হতে হয়েছে, ভবিষ্যতে হবেও। অনেকেই বুঝতে পারেন না যে এই মানুষগুলোকে অনেক উপেক্ষা ও উপহাস সহ্য করতে হয়। তার প্রধান কারণ হাউজ় ওয়াইফ জানা থাকলেও, হাউস হাজ়ব্যান্ড ব্যাপারটা আমাদের সমাজের এখনো খুব রপ্ত হয়নি। 'স্বপ্নের জাল’ যখন লিখলাম, ভয় ছিল এই ধরণের অফবিট টপিককে কেমন ভাবে নেবে পাঠক, হয়তো বলবে এসব গল্প প্রেমের কাহিনীর ভিড়ে কেন? রেকারেন্ট বা রেকারিং ড্রিমস, সেই সঙ্গে নেক্রোফিলিয়া সব মিলিয়ে এক জমজমাট রহস্য কাহিনীর মাঝে হারিয়ে যাবে না তো পিতা-পুত্রের সম্পর্কের না বলা কথা। বাবাকে বুঝতে পারবে, নাকি পারবে না — সেই দোলাচলে থাকবে ছেলে। স্বপ্নের জাল বাবা-ছেলের মর্মস্পর্শী সম্পর্কের গল্প। ‘বৃষ্টি ভেজা আকাশ’ একদম যুবক-যুবতীর প্রেমকাহিনী নয়। নিজের ভালোবাসার উপরে আস্থা হারানো অন্যায়, তাই প্রেমিকার ছেড়ে যাওয়াকে দুঃখের বিরহ বেদনার মিথ্যে গল্প তৈরী করে নেওয়ার মধ্যে বছর পঁচিশের ছেলেটার সংবেদনশীল মনের পরিচয় পাওয়া যায়। আকাশ নিজের বাবা মায়ের জন্য প্রেম, কেরিয়ারের সঙ্গে আপোষ করে নিতে পারে। এরকম ছেলেরা হয়তো আজও লুকিয়ে আছে আমাদের সকলের মাঝে, জহুরির চোখ দিয়ে খুঁজে নিতে হয় তাঁদের। হয়তো বৃষ্টি দেখতে পেয়েছিল। তাই ‘বৃষ্টি ভেজা আকাশ’ লিখতে পেরেছি।</p>
+</div>
+
+<div id="book" class="tabcontent">
+  <ul style="font-size:16.5px;margin-left: 40px;">
+      <li>Publisher: Talent</li>
+      <li >Arts Language: Bengali</li>
+      <li>Paperback: 148 pages</li>
+      <li>ISBN: 9356290792</li>
+      <li>Item Weigh: 270 g</li>
+      <li>Dimensions: 20.3 x 25.4 x 4.7 cm</li>
+  </ul> 
+</div>
+
+<div id="characters" class="tabcontent">
+  <p style="font-size:16.5px;margin-left: 40px;">Characters of the books is coming soon.</p>
+</div>
+<div>
+    <img class="img2" src="https://debaratibhowmick.com/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-18-at-3.19.12-PM.png" style="
+    height: 453px;
+" alt="">
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html>

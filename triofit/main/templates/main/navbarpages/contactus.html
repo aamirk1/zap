@@ -89,34 +89,35 @@
                         </div>   
                     </div>
                 </div>
+                <div class="form-popup" id="myForm">
+                    <form method="post">
+                        {% csrf_token %}
+            
+                        <div class="form-group">
+                            {{ form.name }}
+                            {% if form.errors.name %}
+                                <label for="" class="text-danger">{{ form.errors.name }}</label>
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.email }}
+                            {% if form.errors.email %}
+                                <label for="" class="text-danger">{{ form.errors.email }}</label>
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.message }}
+                            {% if form.errors.message %}
+                                <label for="" class="text-danger">{{ form.errors.message }}</label>
+                            {% endif %}
+                        </div>
+                        <input type="submit" value="Send" style="padding-left: 15px;padding-right: 15px;border-radius: 5px;font-size:20px;color: whitesmoke;background-color: gray;">
+                        <button type="button"style="padding-left: 15px;padding-right: 15px;border-radius: 5px;font-size:20px;color: whitesmoke;background-color: red;" onclick="closeForm()">Close</button>
+                    </form>
+    
+                </div>  
             </div>
-            <div class="form-popup" id="myForm">
-                <form method="post">
-                    {% csrf_token %}
-        
-                    <div class="form-group">
-                        {{ form.name }}
-                        {% if form.errors.name %}
-                            <label for="" class="text-danger">{{ form.errors.name }}</label>
-                        {% endif %}
-                    </div>
-                    <div class="form-group">
-                        {{ form.email }}
-                        {% if form.errors.email %}
-                            <label for="" class="text-danger">{{ form.errors.email }}</label>
-                        {% endif %}
-                    </div>
-                    <div class="form-group">
-                        {{ form.message }}
-                        {% if form.errors.message %}
-                            <label for="" class="text-danger">{{ form.errors.message }}</label>
-                        {% endif %}
-                    </div>
-                    <input type="submit" value="Send" style="padding: 5px;border-radius: 5px;font-size:20px;color: whitesmoke;background-color: gray;">
-                    <button type="button"style="padding: 5px;border-radius: 5px;font-size:20px;color: whitesmoke;background-color: red;" onclick="closeForm()">Close</button>
-                </form>
-
-            </div>    
+              
         </div>
     </div>
     

@@ -78,6 +78,7 @@ p{
   color: white;
   background-color: #0000;
   border-radius: 5px;
+  font-size:20px;
   height: 50px;
   width: 370px; 
 }
@@ -638,7 +639,7 @@ div>a{
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
-  position: fixed;
+  position: relative;
   bottom: 0;
   right: 15px;
   border: 3px solid #f1f1f1;
@@ -678,7 +679,14 @@ div>a{
   margin-bottom:10px;
   opacity: 0.8;
 }
-
+#myForm{
+  /* display: flex; */
+  left: -180px;
+  top: -530px;
+  padding-left: 70px;
+  padding-bottom: 30px;
+  border:1px solid black;
+}
 /* Add a red background color to the cancel button */
 /* .cancel {
   background-color: red;

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+* {box-sizing: border-box}
+body {font-family: "Questrial", sans-serif;
+font-weight: 500;
+background-image: url('');
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  font-size: 15px;
+  width: 20%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 10px 1px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+
+
+.img2 {
+    width: 30px;
+    position: relative;
+    bottom: 340px;
+    left: 115px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  
+  width: 80%;
+  border-left: none;
+  height: 300px;
+}
